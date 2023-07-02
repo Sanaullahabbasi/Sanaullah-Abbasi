@@ -1,0 +1,5 @@
+h1, h3, H4 {background-color: aliceblue; color: darkgreen; font-size: x-large; font-style: italic; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+b {background-color: aliceblue; color: brown; font-style:oblique; font-size: large;}
+.List { background-color: aliceblue; color:crimson; font-size: medium; font-family: 'Times New Roman', Times, serif ;}
+p, h4 {background-color: aliceblue;}
+li i {color:crimson; font-size: medium; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}

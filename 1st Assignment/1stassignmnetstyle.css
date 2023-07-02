@@ -1,0 +1,10 @@
+.firstlist {color: navy;}
+a>span {font-family: Georgia, 'Times New Roman', Times, serif; color: rgb(238, 33, 238);}
+h1, h4, p{ font-size: medium; font-family: Georgia, 'Times New Roman', Times, serif;}
+h1 {color:rgb(255, 255, 255); background-color: dimgrey; margin-top: auto; margin-bottom: auto; margin-left: auto; margin-right: auto;}
+p {color:navy; font-size: larger;}
+b {color: brown;}
+body {background-color:rgb(177, 233, 169);}
+#heading {text-align: center;}
+#month {background-size: cover;background-image: url(https://c.tadst.com/gfx/750w/calendar-common-year.jpg?1);} 
+body {background-size:cover; background-image: url(https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?w=2000);}

@@ -1,0 +1,19 @@
+.mainlist {
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(112, 134, 199, 0.2);  color: rgb(255, 255, 255);
+    font-size: larger;  ;
+}
+
+#heading {
+    color: rgb(194, 168, 24);
+    background-color: dimgrey;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: rgba(245, 62, 113, 0.6);
+}
