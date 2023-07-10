@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(Font/Poppins-Medium.ttf)
+}
+
+@font-face {
+    font-family: "Garamond";
+    src: url(Font/CormorantGaramond-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: "Fasthand";
+    src: url(Font/Fasthand-Regular.ttf);
+}
+
+@font-face {
+    font-family: "IndieFlower";
+    src: url(Font/IndieFlower-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Josefin";
+    src: url(Font/JosefinSans-VariableFont_wght.ttf);
+}
+
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Poppins";
+}
+
+.header>h2 {
+    text-decoration: underline;
+    color: rgb(8, 78, 71);
+    text-shadow: 2px 2px 3px rgb(136, 91, 70);
+    font-style: italic;
+    font-weight: 300;
+}
+
+.header>h1 {
+    color: chartreuse;
+    text-shadow: 3px 3px 5px rgb(14, 58, 14);
+}
+
+.header>h1::first-letter {
+    font-size: 150%;
+}
+
+.main {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(181, 204, 248);
+    width: 100%;
+    height: 30vh;
+}
+
+.body .one {
+    color: rgb(8, 78, 71);
+    text-align: justify;
+    margin: 0 auto;
+    font-family: "Garamond";
+    width: 300px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.body .two {
+    color: rgb(70, 40, 12);
+    text-align: justify;
+    margin: 0 auto;
+    font-family: "Fasthand";
+    width: 300px;
+    text-align: center;
+    font-weight: bolder;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+}
+
+.body .three {
+    color: rgb(95, 4, 83);
+    text-align: justify;
+    margin: 0 auto;
+    font-family: "IndieFlower";
+    width: 300px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.body .four {
+    color: rgb(78, 30, 8);
+    text-align: justify;
+    margin: 0 auto;
+    font-family: "Poppins";
+    width: 300px;
+    text-align: center;
+    font-style: oblique;
+}
+
+body {
+    background-color: rgb(228, 223, 162);
+}
+
+.button {
+    background: rgb(206, 184, 221);
+    font-weight: bold;
+    border: 0;
+    color: rgb(212, 178, 25);
+    padding: 15px;
+    border-radius: 20px;
+    transition: 0.4s ease;
+    margin: 30px auto;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.content {
+    width: 450px;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 20px;
+    margin: 10px auto; padding: 5px;
+}
+#Previous {margin:0px  0px 0px 400px; ;}
+#Next {margin:  0px 400px 0px 0px; float: right;}
+#Invictus {margin:  0px 400px 0px 0px; float: right}
+.a {font-family: "Poppins"; font-weight: bold; color:crimson ;} 
+.b {font-family: "Garamond"; font-weight: bold; color:rgb(23, 20, 220) ;} 
+.c {font-family: "Fasthand"; font-weight:bold; color:rgb(9, 82, 33) ;} 
+.d {font-family: "IndieFlower"; font-weight:bold; color:rgb(9, 82, 33) ;} 
+.e {font-family: "Josefin"; font-weight:bold; font-style: oblique; color:rgb(104, 8, 80) ;} 
+.f {font-family: "Poppins"; font-weight: bold; color:crimson ;} 
+.g {font-family: "Garamond"; font-weight: bold; color:rgb(23, 20, 220) ;} 
+.h {font-family: "Fasthand"; font-weight:bold; color:rgb(9, 82, 33) ;} 
+.j {font-family: "IndieFlower"; font-weight:bold; color:rgb(9, 82, 33) ;} 
+.k {font-family: "Josefin"; font-weight:bold; font-style: oblique; color:rgb(104, 8, 80) ;} 
+.l {font-family: "Poppins"; font-weight: bold; color:crimson ;} 
+.m {font-family: "Garamond"; font-weight: bold; color:rgb(23, 20, 220) ;} 
+.n {font-family: "Fasthand"; font-weight:bold; color:rgb(9, 82, 33) ;} 
+.o {font-family: "IndieFlower"; font-weight:bold; color:rgb(9, 82, 33) ;} 
+.p {font-family: "Josefin"; font-weight:bold; font-style: oblique; color:crimson ;} 
+.q {font-family: "IndieFlower"; font-weight:bold; color:rgb(9, 82, 33) ;} 
+.r {font-family: "Garamond"; font-weight:bold; color:rgb(82, 9, 72) ;}
