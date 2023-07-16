@@ -3,6 +3,11 @@
     src: url(Font/Apercu\ Regular.otf);
 }
 
+@font-face {
+    font-family: "Butler";
+    src: url(Font/Butler_Regular.otf);
+}
+
 header {
     width: 100%;
     height: 15vh;
@@ -27,6 +32,7 @@ header>img {
 
 body {
     margin: 0px;
+    background-color: black;
 }
 
 .nav>li {
@@ -85,3 +91,135 @@ body {
 .nav a:link {
     text-decoration: none;
 }
+
+article img {
+    cursor: pointer;
+}
+
+.second p {
+    font-family: "Butler";
+    font-weight: 500px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+}
+
+.second>span {
+    margin: 20px auto
+}
+
+.Product_Category {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Product_Category img {
+    padding: 20px;
+    width: 120%;
+    height: 350px;
+    object-fit: cover;
+    display: inline-block;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+
+figcaption {
+    color: #fff;
+    font-family: "Butler";
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400px;
+}
+
+.third {
+    display: flex;
+    justify-content: center;
+}
+
+.promotion {
+    display: inline-block;
+}
+
+.promotion img {
+    width: 550px;
+    height: 450px;
+    vertical-align: middle;
+    margin: 0px;
+    padding: 0px;
+}
+
+.About {
+    background-color: #0f0f0f;
+    display: inline-block;
+    width: 550px;
+    height: 426px;
+    vertical-align: middle;
+    margin: 15px;
+    padding: 15px;
+    position: relative;
+}
+
+.About>small {
+    font-family: "Apercu";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.48em;
+    text-transform: uppercase;
+    color: #ED1C24;
+
+}
+
+.About>h5 {
+    font-family: "Butler";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 54px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.About>p {
+    font-family: "Apercu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 24px 0px 38px;
+}
+
+.About .btn3 {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    width: 174px;
+    height: 50px;
+    background-color: #0f0f0f;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+        padding-top: 4px;
+    text-align: start;
+    padding-left: 25px;
+    margin-left: 16px;
+    
+}
+.About.fa {
+    background-color: #fff;
+    color: #dc3545;
+    padding: 6px 7px;
+    border-radius: 23px;
+    margin-left: 7px;
+    position: absolute;
+    }
