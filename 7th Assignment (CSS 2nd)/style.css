@@ -132,7 +132,7 @@ article img {
 figcaption {
     color: #fff;
     font-family: "Butler";
-    text-align: right;
+    text-align: center;
     font-size: 18px;
     font-weight: 400px;
 }
@@ -147,22 +147,24 @@ figcaption {
 }
 
 .promotion img {
-    width: 550px;
+    width: 110%;
     height: 450px;
     vertical-align: middle;
-    margin: 0px;
-    padding: 0px;
+    margin: 2px;
+    padding: 2px;
 }
 
 .About {
     background-color: #0f0f0f;
     display: inline-block;
-    width: 550px;
+    width: 60%;
     height: 426px;
     vertical-align: middle;
     margin: 15px;
     padding: 15px;
     position: relative;
+    border: none;
+
 }
 
 .About>small {
@@ -174,7 +176,7 @@ figcaption {
     letter-spacing: 0.48em;
     text-transform: uppercase;
     color: #ED1C24;
-
+    padding-left: 70px;
 }
 
 .About>h5 {
@@ -185,6 +187,7 @@ figcaption {
     line-height: 54px;
     text-transform: capitalize;
     color: #FFFFFF;
+    padding-left: 70px;
 }
 
 .About>p {
@@ -196,7 +199,7 @@ figcaption {
     text-align: justify;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.7);
-    margin: 24px 0px 38px;
+    padding-left: 70px;
 }
 
 .About .btn3 {
@@ -209,17 +212,539 @@ figcaption {
     background-color: #0f0f0f;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 50px;
-        padding-top: 4px;
+    padding-top: 4px;
     text-align: start;
     padding-left: 25px;
-    margin-left: 16px;
-    
+    margin-left: 30px;
+    margin-top: 20px;
 }
-.About.fa {
+
+.About li {
+    display: inline-block;
+}
+
+.About .fa {
     background-color: #fff;
     color: #dc3545;
     padding: 6px 7px;
     border-radius: 23px;
     margin-left: 7px;
+    top: 365px;
+    right: 470px;
     position: absolute;
+
+}
+.fourth {display: flex; width: 100%; height: 100vh; display: inline-block; justify-content: center;}
+
+.fourth p {
+    font-family: "Butler";
+    font-weight: 500px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+}
+.row1 {margin: 20px auto; display: flex; justify-content: space-around !important;} 
+.row2 {margin: 20px auto; display: flex; justify-content: space-around !important;}
+.deal1 img {
+    width: 300px;
+    height: 225px;
+    object-fit: cover;
+    vertical-align: middle;
+    border-style: none; 
+}
+
+.deal1 button {
+    color: #fff;
+    background-color: #ed1c24;
+    border-radius: 45px;
+    margin: 20px 0px;
+    padding: 14px 39px;
+    font-weight: 400;
+    border: 1px solid #ed1c24;
+    margin-top: 10px;
+    margin-left: 199px;
+    padding: 18px;
+}
+
+.deal1 .card {
+    font-family: "Apercu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.deal1 .card_price {
+    color: #fff;
+    font-weight: 500px;
+    margin: 10px 0px 14px t;
+    font-size: 16px;
+}
+
+.deal1 {
+    width: 300px;
+    height: 20vh;
+    margin: 10px auto;
+    padding-bottom: 250px;
+    display: inline-block;
+   
+}
+
+.deal2 {
+    width: 300px;
+    height: 20vh;
+    margin: 10px auto;
+    padding-bottom: 250px;
+    display: inline-block;
+}
+
+.deal2 img {
+    width: 300px;
+    height: 225px;
+    object-fit: cover;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.deal2 button {
+    color: #fff;
+    background-color: #ed1c24;
+    border-radius: 45px;
+    margin: 20px 0px;
+    padding: 14px 39px;
+    font-weight: 400;
+    border: 1px solid #ed1c24;
+    margin-top: 10px;
+    margin-left: 199px;
+    padding: 18px;
+}
+
+.deal2 .card {
+    font-family: "Apercu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.deal2 .card_price {
+    color: #fff;
+    font-weight: 500px;
+    margin: 10px 0px 14px t;
+    font-size: 16px;
+}
+
+.deal3 {
+    width: 300px;
+    height: 20vh;
+    margin: 10px auto;
+    padding-bottom: 250px;
+    display: inline-block;
+}
+
+.deal3 img {
+    width: 300px;
+    height: 225px;
+    object-fit: cover;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.deal3 button {
+    color: #fff;
+    background-color: #ed1c24;
+    border-radius: 45px;
+    margin: 20px 0px;
+    padding: 14px 39px;
+    font-weight: 400;
+    border: 1px solid #ed1c24;
+    margin-top: 10px;
+    margin-left: 199px;
+    padding: 18px;
+}
+
+.deal3 .card {
+    font-family: "Apercu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.deal3 .card_price {
+    color: #fff;
+    font-weight: 500;
+    margin: 10px 0px 14px t;
+    font-size: 16px;
+}
+
+.deal4 {
+    width: 300px;
+    height: 20vh;
+    margin: 10px auto;
+    padding-bottom: 250px;
+ display: inline-block;
+}
+
+.deal4 img {
+    width: 300px;
+    height: 225px;
+    object-fit: cover;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.deal4 button {
+    color: #fff;
+    background-color: #ed1c24;
+    border-radius: 45px;
+    margin: 20px 0px;
+    padding: 14px 39px;
+    font-weight: 400;
+    border: 1px solid #ed1c24;
+    margin-top: 10px;
+    margin-left: 199px;
+    padding: 18px;
+}
+
+.deal4 .card {
+    font-family: "Apercu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.deal14 .card_price {
+    color: #fff;
+    font-weight: 500px;
+    margin: 10px 0px 14px t;
+    font-size: 16px;
+}
+
+.deal5 {
+    width: 300px;
+    height: 20vh;
+    margin: 10px auto;
+    padding-bottom: 250px;
+    display: inline-block;
+}
+
+.deal5 img {
+    width: 300px;
+    height: 225px;
+    object-fit: cover;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.deal5 button {
+    color: #fff;
+    background-color: #ed1c24;
+    border-radius: 45px;
+    margin: 20px 0px;
+    padding: 14px 39px;
+    font-weight: 400px;
+    border: 1px solid #ed1c24;
+    margin-top: 10px;
+    margin-left: 199px;
+    padding: 18px;
+}
+
+.deal5 .card {
+    font-family: "Apercu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.deal5 .card_price {
+    color: #fff;
+    font-weight: 500px;
+    margin: 10px 0px 14px t;
+    font-size: 16px;
+}
+
+.deal6 {
+    width: 300px;
+    height: 20vh;
+    margin: 10px auto;
+    padding-bottom: 250px;
+    display: inline-block;
+}
+
+.deal6 img {
+    width: 300px;
+    height: 225px;
+    object-fit: cover;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.deal6 button {
+    color: #fff;
+    background-color: #ed1c24;
+    border-radius: 45px;
+    margin: 20px 0px;
+    padding: 14px 39px;
+    font-weight: 400px;
+    border: 1px solid #ed1c24;
+    margin-top: 10px;
+    margin-left: 199px;
+    padding: 18px;
+}
+
+.deal6 .card {
+    font-family: "Apercu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.deal6 .card_price {
+    color: #fff;
+    font-weight: 500px;
+    margin: 10px 0px 14px t;
+    font-size: 16px;
+}
+/* .deal1, .deal2, .deal3, .deal4, .deal5, .deal6 {dispplay:flex; flex-direction: row; row-gap: 5  px ;} */
+.fifth {
+    display: flex; 
+    justify-content: center; display: inline-block; padding-top: 50px;
+}
+
+.fifth .promotion {
+    display: inline-block; vertical-align: middle;
+}
+
+.fifth .promotion img {
+    width: 100%;
+    height: 520px;
+    vertical-align: middle;
+    margin: 2px;
+    padding: 2px;
+}
+
+.fifth>.About {
+    background-color: #0f0f0f;
+    display: inline-block;
+    width: 50%;
+    height: 80vh;
+    vertical-align: middle;
+    margin: 15px;
+    padding: 15px;
+    position: relative;
+    border: none;
+
+}
+
+.fifth small {
+    font-family: "Apercu";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.48em;
+    text-transform: uppercase;
+    color: #ED1C24;
+    padding-left: 70px;
+}
+
+.fifth h5 {
+    font-family: "Butler";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 54px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding-left: 70px;
+}
+
+.fifth p {
+    font-family: "Apercu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.7);
+    padding-left: 70px;
+}
+
+.fifth .btn3 {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    width: 174px;
+    height: 50px;
+    background-color: #0f0f0f;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    padding-top: 4px;
+    text-align: start;
+    padding-left: 25px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.fifth li {
+    display: inline-block;
+}
+
+.fifth .fa {
+    background-color: #fff;
+    color: #dc3545;
+    padding: 6px 7px;
+    border-radius: 23px;
+    margin-left: 7px;
+    top: 490px;
+    right: 470px;
+    position: absolute;
+}
+.fifth .price-hold{    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    display: block; color: #fff; font-family: "Apercu"; padding-left: 70px;}
+
+    #Feed p {
+        font-family: "Butler";
+        font-weight: 500px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        color: #fff;
+        text-align: center;
     }
+    
+    #Feed>span {
+        margin: 20px auto
+    }
+    
+   #Feed>.Product_Category {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #Feed>.Product_Category img {
+        padding: 20px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: inline-block;
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    /* figcaption {
+        color: #fff;
+        font-family: "Butler";
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400px;
+    } */
+    footer {
+        color: #fff;
+    float: left;
+    width: 100%;
+    padding: 70px 15px 0px 15px;
+    background: rgba(255, 255, 255, 0.06);
+    position: relative; display: flex; justify-content: space-around;
+    }
+    .data 
+    {
+        display: flex;
+    flex-direction: column;
+    width: 190%;}
+    .link, .contact, .follow {
+        display: flex;
+    flex-direction: column;
+    width: 100%;
+    }
+    .data img {
+        padding-left: 30px;
+        padding-top: 2px;
+        width: 145px;
+        height: 70px;}
+    footer p {
+        margin: 0px !important;
+    padding-bottom: 24px;
+    padding-right: 0px;
+    text-align: left;
+    font-family: "Apercu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.7);
+    padding-left: 30px;
+    }
+    
+    footer h3{
+        margin-bottom: 0px !important;
+        font-family: "Butler";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        margin: 2px 0px 0px 34px;
+    }
+    footer li {
+        font-family: "Apercu";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.7) !important;
+        list-style: none;
+        }
+    /* .link {
+            list-style: none;
+ float: left;
+    gap: 0px 5px;
+    padding-bottom: 16px; */
+    /* } */
+.follow img {border-radius: 25px;
+}
+#last {
+    color: rgba(255, 255, 255, 0.6);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    width: 100%;
+}
+.left, .right {
+    font-family: "Apercu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.7);
+}
+#last {display: flex; justify-content: flex-end; align-items: end;}
