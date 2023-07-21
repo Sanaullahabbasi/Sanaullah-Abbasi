@@ -172,7 +172,7 @@ figcaption {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 20px;
+    /* line-height: 20px; */
     letter-spacing: 0.48em;
     text-transform: uppercase;
     color: #ED1C24;
@@ -187,7 +187,7 @@ figcaption {
     line-height: 54px;
     text-transform: capitalize;
     color: #FFFFFF;
-    padding-left: 70px;
+    /* padding-left: 70px; */
 }
 
 .About>p {
@@ -195,7 +195,7 @@ figcaption {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    /* line-height: 24px; */
     text-align: justify;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.7);
@@ -234,7 +234,7 @@ figcaption {
     position: absolute;
 
 }
-.fourth {display: flex; width: 100%; height: 100vh; display: inline-block; justify-content: center;}
+.fourth {display: flex; width: 100%; ; display: inline-block; justify-content: center;}
 
 .fourth p {
     font-family: "Butler";
@@ -243,12 +243,11 @@ figcaption {
     padding-bottom: 0px;
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
-    color: #fff;
+        color: #fff;
     text-align: center;
 }
-.row1 {margin: 20px auto; display: flex; justify-content: space-around !important;} 
-.row2 {margin: 20px auto; display: flex; justify-content: space-around !important;}
+.row1 {height:500px;  margin: 20px auto; display: flex; justify-content: space-around !important;} 
+.row2 {height:500px; margin-top: 50px auto; display: flex; justify-content: space-around !important;}
 .deal1 img {
     width: 300px;
     height: 225px;
@@ -261,12 +260,11 @@ figcaption {
     color: #fff;
     background-color: #ed1c24;
     border-radius: 45px;
-    margin: 20px 0px;
-    padding: 14px 39px;
+
     font-weight: 400;
     border: 1px solid #ed1c24;
     margin-top: 10px;
-    margin-left: 199px;
+    
     padding: 18px;
 }
 
@@ -289,19 +287,23 @@ figcaption {
 
 .deal1 {
     width: 300px;
-    height: 20vh;
+    
     margin: 10px auto;
-    padding-bottom: 250px;
-    display: inline-block;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
    
 }
 
 .deal2 {
     width: 300px;
-    height: 20vh;
+    
     margin: 10px auto;
     padding-bottom: 250px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .deal2 img {
@@ -321,7 +323,7 @@ figcaption {
     font-weight: 400;
     border: 1px solid #ed1c24;
     margin-top: 10px;
-    margin-left: 199px;
+    
     padding: 18px;
 }
 
@@ -344,10 +346,12 @@ figcaption {
 
 .deal3 {
     width: 300px;
-    height: 20vh;
+    
     margin: 10px auto;
     padding-bottom: 250px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .deal3 img {
@@ -367,7 +371,7 @@ figcaption {
     font-weight: 400;
     border: 1px solid #ed1c24;
     margin-top: 10px;
-    margin-left: 199px;
+    
     padding: 18px;
 }
 
@@ -390,10 +394,12 @@ figcaption {
 
 .deal4 {
     width: 300px;
-    height: 20vh;
+    
     margin: 10px auto;
     padding-bottom: 250px;
- display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .deal4 img {
@@ -413,7 +419,7 @@ figcaption {
     font-weight: 400;
     border: 1px solid #ed1c24;
     margin-top: 10px;
-    margin-left: 199px;
+    
     padding: 18px;
 }
 
@@ -436,10 +442,12 @@ figcaption {
 
 .deal5 {
     width: 300px;
-    height: 20vh;
+    
     margin: 10px auto;
     padding-bottom: 250px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .deal5 img {
@@ -459,7 +467,7 @@ figcaption {
     font-weight: 400px;
     border: 1px solid #ed1c24;
     margin-top: 10px;
-    margin-left: 199px;
+    
     padding: 18px;
 }
 
@@ -482,10 +490,12 @@ figcaption {
 
 .deal6 {
     width: 300px;
-    height: 20vh;
     margin: 10px auto;
     padding-bottom: 250px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 .deal6 img {
@@ -505,7 +515,7 @@ figcaption {
     font-weight: 400px;
     border: 1px solid #ed1c24;
     margin-top: 10px;
-    margin-left: 199px;
+    
     padding: 18px;
 }
 
@@ -528,7 +538,7 @@ figcaption {
 /* .deal1, .deal2, .deal3, .deal4, .deal5, .deal6 {dispplay:flex; flex-direction: row; row-gap: 5  px ;} */
 .fifth {
     display: flex; 
-    justify-content: center; display: inline-block; padding-top: 50px;
+    justify-content: center; display: flex; padding-top: 50px;
 }
 
 .fifth .promotion {
@@ -551,7 +561,7 @@ figcaption {
     vertical-align: middle;
     margin: 15px;
     padding: 15px;
-    position: relative;
+    
     border: none;
 
 }
@@ -620,7 +630,7 @@ figcaption {
     margin-left: 7px;
     top: 490px;
     right: 470px;
-    position: absolute;
+
 }
 .fifth .price-hold{    font-size: 26px;
     font-weight: 700;
@@ -747,4 +757,4 @@ figcaption {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.7);
 }
-#last {display: flex; justify-content: flex-end; align-items: end;}
+#last {display: flex; justify-content: space-between; background: rgba(255, 255, 255, 0.06);}
