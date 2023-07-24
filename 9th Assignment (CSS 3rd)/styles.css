@@ -1,1 +1,460 @@
-.navbar>img {width: 30px;}
+@font-face {
+  font-family: "Sofia Pro";
+  src: url(font/sofiapro-light.otf);
+}
+@font-face {
+  font-family: "Cervo";
+  src: url(font/Cervo-Medium.otf);
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.navbar-brand > img {
+  width: 50px;
+  margin-left: 10px;
+}
+.nav-item {
+  text-transform: uppercase;
+  font-weight: bolder !important;
+  font-family: "Sofia Pro";
+  font-size: 0.875rem;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+.navbar {
+  background-color: #0065c3 !important;
+}
+.nav-item > a {
+  color: #fff !important;
+}
+.navbar-brand {
+  margin-right: 50px;
+}
+/* .btn-outline-success {
+    color: #fff;
+    border-color: #fff;
+  }
+  .btn-outline-success:hover {
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
+  } */
+.Pepsi-btn {
+  font-size: 0.7em;
+  padding: 5px 20px;
+  border: 2px solid #fff;
+  border-radius: 1.8em;
+  background: transparent;
+  color: #fff;
+  font-family: Sofia Pro;
+  cursor: pointer;
+  font-weight: bold;
+}
+.Pepsi-btn:hover {
+  background-color: #fff;
+  color: #0065c3;
+  -webkit-animation-name: tada;
+  animation-name: tada;
+}
+@-webkit-keyframes rotateIn {
+  0% {
+    -webkit-transform: rotate(-200deg);
+    transform: rotate(-200deg);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes rotateIn {
+  0% {
+    -webkit-transform: rotate(-200deg);
+    transform: rotate(-200deg);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+.logo:hover {
+  -webkit-animation-name: rotateIn;
+  animation-name: rotateIn;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  animation-duration: 0.2s;
+}
+.section-one {
+  width: 100%;
+  height: 700px;
+  margin: 0px;
+  background-image: url(Images/background-1.png);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.sub-sec-one > img {
+  width: 700px;
+  position: absolute;
+  top: 50px;
+  /* z-index: -1; */
+}
+.right-sec {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.right-sec > img {
+  padding: 50px auto;
+}
+.btn-sec-one {
+  font-size: 1em;
+  border: 2px solid #fff;
+  border-radius: 1.8em;
+  background: transparent;
+  color: #fff;
+  font-family: Sofia Pro Black;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 5px 20px;
+  margin: 50px auto;
+}
+.btn-sec-one:hover {
+  background-color: #fff;
+  color: #0065c3;
+  -webkit-animation-name: jello;
+  animation-name: jello;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+/* .navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0.25rem;
+  transition: box-shadow .15s ease-in-out;} */
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(243, 233, 240);
+}
+.pepsi_zero-sugar {
+  width: 100%;
+  height: auto;
+  background-color: #070707;
+  display: flex;
+  justify-content: center;
+}
+.pepsi_zero-sugar-one {
+  position: relative;
+}
+.new-improved-taste {
+  position: absolute;
+  top: 50px;
+  left: 400px;
+}
+.pepsi_zero-sugar-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 160px;
+  }
+.promo {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+}
+.pepsi-nitro-container {
+  background-image: url(Images/Desktop_Background.png);
+  width: 100%;
+  height: auto;
+ }
+.pepsi-nitro-1 h2 {
+  font-family:"Cervo";
+  font-weight: 400;
+  margin: 0;
+  color: #fff;
+}
+.pepsi-nitro-btn{
+  font-size: 1em;
+  border: 2px solid #fff;
+  border-radius: 1.8em;
+  background: transparent;
+  color: #fff;
+  font-family: "Sofia Pro";
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 5px 20px;
+  margin: 50px auto;
+}
+.pepsi-nitro-btn:hover  {
+  background-color: #fff;
+  color: #0065c3;
+  -webkit-animation-name: jello;
+  animation-name: jello;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+.pepsi-nitro-container {
+  display: flex;
+  justify-content: center;
+  padding: 90px;
+}
+.pepsi-nitro-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 150px;
+} 
+.pepsi-nitro {
+  margin-left: 150px;
+}
+.better-with-pepsi-promo {
+  background-color: #265cc5;
+  background-image: url(Images/PEP_BWP_D.jpg);
+}
+.social {
+  width: 100%;
+  height: 80%;
+  color: #0065c3;
+  /* margin: 30px; */
+  /* background-color: red; */
+}
+.social-title {
+  font-family: "Cervo";
+  font-weight: 600;
+  margin: 0px;
+  font-size: 3.7em;
+  letter-spacing: 0.7rem;
+  word-spacing: 1rem;
+  text-align: center;
+}
+.social img {
+  width: 100%;
+  height: 230px;
+  border: none;
+  cursor: pointer;
+}
+.icon-facebook,
+.icon-instagram,
+.icon-tiktok,
+.icon-twitter,
+.icon-youtube {
+  width: 20%;
+  height: auto;
+}
+.social-twitter {
+  position: relative;
+}
+.social-twitter:hover {
+  -webkit-animation-name: jello;
+  animation-name: jello;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+.icon-twitter {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+}
+.social-facebook {
+  position: relative;
+}
+.icon-facebook {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+}
+.social-facebook:hover {
+  -webkit-animation-name: jello;
+  animation-name: jello;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+.social-instagram {
+  position: relative;
+}
+.icon-instagram {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+}
+.social-instagram:hover {
+  -webkit-animation-name: jello;
+  animation-name: jello;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+.social-youtube {
+  position: relative;
+}
+.icon-youtube {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+}
+.social-youtube:hover {
+  -webkit-animation-name: jello;
+  animation-name: jello;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+.social-tiktok {
+  position: relative;
+}
+.icon-tiktok {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+}
+.social-tiktok:hover {
+  -webkit-animation-name: jello;
+  animation-name: jello;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
+.social-images {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-section {
+  width: 100%;
+  height: auto;
+  background-color: #0065c3;
+  padding: 50px;
+  margin: 0px;
+}
+.footer-logo > img {
+  width: 90px;
+  margin-left: 30px;
+  margin-top: 50px;
+  height: auto;
+}
+.footer-logo:hover {
+  -webkit-animation-name: rotateIn;
+  animation-name: rotateIn;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  animation-duration: 0.2s;
+}
+.link-items {
+  font-family: Sofia Pro;
+  font-size: 20px;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+  -webkit-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+  color: #fff;
+}
+.link-items > ul {
+  list-style: none;
+}
+.link-items li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.footer-btn {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 1em;
+  height: 2.3em;
+  padding: 0.4em 3.85em;
+  border: 2px solid #fff;
+  border-radius: 1.8em;
+  background: transparent;
+  color: #fff;
+  font-family: "Sofia Pro";
+  cursor: pointer;
+}
+.footer-btn:hover {
+  background-color: #fff;
+  color: #0065c3;
+  -webkit-animation-name: tada;
+  animation-name: tada;
+}
+/* .icon-section {
+  padding: 0px !important;
+  margin: 0px !important;
+  display: inline;
+} */
+.icon-section img{
+  width: 50%;
+  height: auto;
+  padding: 0px;
+  
+}
+.icon-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 37px;
+  }
+
+.footer-btn-sec {
+  width: 100%;
+  height: auto;
+}
+.footer-section {
+  display:flex;
+}
+.footer-logo {
+  flex: 0.2;
+}
+.link-items{
+  flex: 0.5;
+}
+.footer-right-sec {
+  flex: 0.3;
+} 
+.link-items {
+  display: flex;
+  flex-direction: wrap;
+}
+.link-items li { 
+list-style-type: none;
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 990px) {
+  .navbar {
+    text-align: center;
+    width: 100%;
+  }
+  .Pepsi-btn {
+    margin-right: 17px;
+  }
+  .sub-sec-one > img {
+    width: 608px;
+    position: absolute;
+    top: 144px;
+  }
+  .right-sec {
+    height: 641px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 53px;
+  }
+  .section-one {
+    /* width: 100%; */
+    height: 573px;
+    /* margin: 0px;
+    background-image: url(Images/background-1.png);
+    display: flex;
+    justify-content: space-between;
+    position: relative; */
+  }
+}
