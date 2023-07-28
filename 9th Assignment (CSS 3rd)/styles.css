@@ -90,7 +90,7 @@ body {
 }
 .section-one {
   width: 100%;
-  height: 700px;
+  height: auto;
   margin: 0px;
   background-image: url(Images/background-1.png);
   display: flex;
@@ -155,6 +155,8 @@ body {
   background-color: #070707;
   display: flex;
   justify-content: center;
+  position: relative;
+    margin: 0px;
 }
 .pepsi_zero-sugar-one {
   position: relative;
@@ -179,6 +181,8 @@ body {
   background-image: url(Images/Desktop_Background.png);
   width: 100%;
   height: auto;
+  padding: 0px;
+  margin: 0px;
 }
 .pepsi-nitro-1 h2 {
   font-family: "Cervo";
@@ -274,8 +278,16 @@ body {
 .mango-sec {
   background-color: #0f388a;
   width: 100%;
-  height: 95vh;
+  height: auto;
+  /* position: relative; */
+  padding: 0px;
+  margin: 0px;
+}
+.mango-sec-left {
   position: relative;
+  /* background-color: #0f388a; */
+  width: 100%;
+  height: auto;
 }
 .mango {
   position: absolute;
@@ -288,18 +300,125 @@ body {
   position: absolute;
   width: 900px;
   /* left: 10px; */
-  bottom: 0.1px;
   opacity: 0.9;
-  width: 90%;
+  width: 95%;
+  top: 72px;
+  left: 0px;
 }
 .mango-text {
   position: absolute;
-  width: 30%;
-  bottom: 20px;
-  left: 30px;
+  width: 37%;
+  top: 643px;
+  left: 48px
   /* top: 10px */
   /* z-index: -1; */
 }
+.mango-with-wave {
+  width: 900px;
+}
+.mango-sec-right {
+  width: 100%;
+  /* margin-right: 200px !important; */
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px;
+  margin: 0px;
+}
+.mango-sec-left {
+  position: relative;
+}
+/* .video-container {
+  width: 100%;
+  height: 700px;
+  background-color: #0065c3;
+  background-color: transparent;
+ padding: 0px; 
+  margin: 0px;
+} 
+.video-play {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+} */
+.can-container1 {
+  background-color: #044da9;
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.large-text {
+  margin: auto auto;
+}
+.large-text {
+  -webkit-animation-name: lightSpeedInRight;
+  animation-name: lightSpeedInRight;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+.can-img {
+  -webkit-animation-name: lightSpeedInLeft;
+  animation-name: lightSpeedInLeft;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+.pepsi-flavor-container {
+  width: 100%;
+  height: auto;
+  background-image: url(Images/background-2.png);
+  padding: 20px;
+  margin: 0px;
+}
+.pepsi-flavor-container-left > div > h2 {
+  font-family: "Cervo";
+  color: #fff;
+  font-weight: 400px;
+  font-size: 60px;
+}
+.pepsi-flavor-container-left > div > p {
+  font-family: "Cervo";
+  color: #fff;
+  word-spacing: 0.2em;
+  letter-spacing: 0.08em;
+  /* font-weight: 400px; */
+  font-size: 18px;
+  font-style: italic;
+  font-weight: lighter;
+}
+.pepsi-flavor-container-left{
+  -webkit-animation-name: lightSpeedInLeft;
+  animation-name: lightSpeedInLeft;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  margin: 30px;
+}
+.pepsi-flavor-container-right {
+  -webkit-animation-name: lightSpeedInRight;
+  animation-name: lightSpeedInRight;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  margin: 30px auto;
+}
+.falvor-btn {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 1em;
+  height: 2.3em;
+  padding: 0.2em 1.85em;
+  border: 3px solid #fff;
+  border-radius: 1.8em;
+  background: transparent;
+  color: #fff;
+  font-family: "Sofia Pro";
+  cursor: pointer;
+}
+.falvor-btn:hover {
+  background-color: #fff;
+  color: #0065c3;
+  -webkit-animation-name: tada;
+  animation-name: tada;}
 .social {
   width: 100%;
   height: 80%;
@@ -307,9 +426,7 @@ body {
   /* margin: 30px; */
   /* background-color: red; */
 }
-.mango-sec-left {
-  position: relative;
-}
+
 .social-title {
   font-family: "Cervo";
   font-weight: 600;
