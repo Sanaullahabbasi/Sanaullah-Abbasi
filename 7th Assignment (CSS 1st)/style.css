@@ -1,296 +1,380 @@
 @font-face {
-    font-family: "Poppins";
-    src: url(Font/Poppins-Medium.ttf)
+  font-family: "Poppins";
+  src: url(Font/Poppins-Medium.ttf);
 }
 
 @font-face {
-    font-family: "Garamond";
-    src: url(Font/CormorantGaramond-MediumItalic.ttf);
+  font-family: "Garamond";
+  src: url(Font/CormorantGaramond-MediumItalic.ttf);
 }
 
 @font-face {
-    font-family: "Fasthand";
-    src: url(Font/Fasthand-Regular.ttf);
+  font-family: "Fasthand";
+  src: url(Font/Fasthand-Regular.ttf);
 }
 
 @font-face {
-    font-family: "IndieFlower";
-    src: url(Font/IndieFlower-Regular.ttf);
+  font-family: "IndieFlower";
+  src: url(Font/IndieFlower-Regular.ttf);
 }
 
 @font-face {
-    font-family: "Josefin";
-    src: url(Font/JosefinSans-VariableFont_wght.ttf);
+  font-family: "Josefin";
+  src: url(Font/JosefinSans-VariableFont_wght.ttf);
 }
 
 .header {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: "Poppins";
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Poppins";
 }
 
-.header>h2 {
-    text-decoration: underline;
-    color: rgb(8, 78, 71);
-    text-shadow: 2px 2px 3px rgb(136, 91, 70);
-    font-style: italic;
-    font-weight: 300;
+.header > h2 {
+  text-decoration: underline;
+  color: rgb(8, 78, 71);
+  text-shadow: 2px 2px 3px rgb(136, 91, 70);
+  font-style: italic;
+  font-weight: 300;
 }
 
-.header>h1 {
-    color: chartreuse;
-    text-shadow: 3px 3px 5px rgb(14, 58, 14);
+.header > h1 {
+  color: chartreuse;
+  text-shadow: 3px 3px 5px rgb(14, 58, 14);
 }
 
-.header>h1::first-letter {
-    font-size: 150%;
+.header > h1::first-letter {
+  font-size: 150%;
 }
 
 .main {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: rgb(181, 204, 248);
-    width: 100%;
-    height: 30vh;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgb(181, 204, 248);
+  width: 100%;
+  height: 30vh;
 }
 
 .body .one {
-    color: rgb(8, 78, 71);
-    text-align: justify;
-    margin: 0 auto;
-    font-family: "Garamond";
-    width: 300px;
-    text-align: center;
-    font-weight: bolder;
+  color: rgb(8, 78, 71);
+  text-align: justify;
+  margin: 0 auto;
+  font-family: "Garamond";
+  width: 300px;
+  text-align: center;
+  font-weight: bolder;
 }
 
 .body .two {
-    color: rgb(70, 40, 12);
-    text-align: justify;
-    margin: 0 auto;
-    font-family: "Fasthand";
-    width: 300px;
-    text-align: center;
-    font-weight: bolder;
-    word-spacing: 5px;
-    letter-spacing: 3px;
+  color: rgb(70, 40, 12);
+  text-align: justify;
+  margin: 0 auto;
+  font-family: "Fasthand";
+  width: 300px;
+  text-align: center;
+  font-weight: bolder;
+  word-spacing: 5px;
+  letter-spacing: 3px;
 }
 
 .body .three {
-    color: rgb(95, 4, 83);
-    text-align: justify;
-    margin: 0 auto;
-    font-family: "IndieFlower";
-    width: 300px;
-    text-align: center;
-    font-weight: bolder;
+  color: rgb(95, 4, 83);
+  text-align: justify;
+  margin: 0 auto;
+  font-family: "IndieFlower";
+  width: 300px;
+  text-align: center;
+  font-weight: bolder;
 }
 
 .body .four {
-    color: rgb(78, 30, 8);
-    text-align: justify;
-    margin: 0 auto;
-    font-family: "Poppins";
-    width: 300px;
-    text-align: center;
-    font-style: oblique;
+  color: rgb(78, 30, 8);
+  text-align: justify;
+  margin: 0 auto;
+  font-family: "Poppins";
+  width: 300px;
+  text-align: center;
+  font-style: oblique;
 }
 
 body {
-    background-color: rgb(228, 223, 162);
+  background-color: rgb(228, 223, 162);
 }
 
 .button {
-    background: rgb(206, 184, 221);
-    font-weight: bold;
-    border: 0;
-    color: rgb(212, 178, 25);
-    padding: 15px;
-    border-radius: 20px;
-    transition: 0.4s ease;
-    margin: 30px auto;
+  background: rgb(206, 184, 221);
+  font-weight: bold;
+  border: 0;
+  color: rgb(212, 178, 25);
+  padding: 15px;
+  border-radius: 20px;
+  transition: 0.4s ease;
+  margin: 30px auto;
 }
 
 .button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .content {
-    width: 450px;
-    text-align: center;
-    letter-spacing: 2px;
-    padding: 20px;
-    margin: 10px auto;
-    padding: 5px;
+  width: 450px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 20px;
+  margin: 10px auto;
+  padding: 5px;
 }
 
-#Logout {margin: 0px  0px 0px 400px;
-    margin: 0px 0px 0px 400px;
-    ;
+#Logout {
+  margin: 0px 0px 0px 400px;
+  margin: 0px 0px 0px 400px;
 }
-#Previous {margin: 0px  0px 0px 400px;
-    margin: 0px 0px 0px 400px;
-    ;
+#Previous {
+  margin: 0px 0px 0px 400px;
+  margin: 0px 0px 0px 400px;
 }
 #Next {
-    margin: 0px 400px 0px 0px;
-    float: right;
+  margin: 0px 400px 0px 0px;
+  float: right;
 }
 
 #Invictus {
-    margin: 0px 400px 0px 0px;
-    float: right
+  margin: 0px 400px 0px 0px;
+  float: right;
 }
 
 .a {
-    font-family: "Poppins";
-    font-weight: bold;
-    color: crimson;
+  font-family: "Poppins";
+  font-weight: bold;
+  color: crimson;
 }
 
 .b {
-    font-family: "Garamond";
-    font-weight: bold;
-    color: rgb(23, 20, 220);
+  font-family: "Garamond";
+  font-weight: bold;
+  color: rgb(23, 20, 220);
 }
 
 .c {
-    font-family: "Fasthand";
-    font-weight: bold;
-    color: rgb(9, 82, 33);
+  font-family: "Fasthand";
+  font-weight: bold;
+  color: rgb(9, 82, 33);
 }
 
 .d {
-    font-family: "IndieFlower";
-    font-weight: bold;
-    color: rgb(9, 82, 33);
+  font-family: "IndieFlower";
+  font-weight: bold;
+  color: rgb(9, 82, 33);
 }
 
 .e {
-    font-family: "Josefin";
-    font-weight: bold;
-    font-style: oblique;
-    color: rgb(104, 8, 80);
+  font-family: "Josefin";
+  font-weight: bold;
+  font-style: oblique;
+  color: rgb(104, 8, 80);
 }
 
 .f {
-    font-family: "Poppins";
-    font-weight: bold;
-    color: crimson;
+  font-family: "Poppins";
+  font-weight: bold;
+  color: crimson;
 }
 
 .g {
-    font-family: "Garamond";
-    font-weight: bold;
-    color: rgb(23, 20, 220);
+  font-family: "Garamond";
+  font-weight: bold;
+  color: rgb(23, 20, 220);
 }
 
 .h {
-    font-family: "Fasthand";
-    font-weight: bold;
-    color: rgb(9, 82, 33);
+  font-family: "Fasthand";
+  font-weight: bold;
+  color: rgb(9, 82, 33);
 }
 
 .j {
-    font-family: "IndieFlower";
-    font-weight: bold;
-    color: rgb(9, 82, 33);
+  font-family: "IndieFlower";
+  font-weight: bold;
+  color: rgb(9, 82, 33);
 }
 
 .k {
-    font-family: "Josefin";
-    font-weight: bold;
-    font-style: oblique;
-    color: rgb(104, 8, 80);
+  font-family: "Josefin";
+  font-weight: bold;
+  font-style: oblique;
+  color: rgb(104, 8, 80);
 }
 
 .l {
-    font-family: "Poppins";
-    font-weight: bold;
-    color: crimson;
+  font-family: "Poppins";
+  font-weight: bold;
+  color: crimson;
 }
 
 .m {
-    font-family: "Garamond";
-    font-weight: bold;
-    color: rgb(23, 20, 220);
+  font-family: "Garamond";
+  font-weight: bold;
+  color: rgb(23, 20, 220);
 }
 
 .n {
-    font-family: "Fasthand";
-    font-weight: bold;
-    color: rgb(9, 82, 33);
+  font-family: "Fasthand";
+  font-weight: bold;
+  color: rgb(9, 82, 33);
 }
 
 .o {
-    font-family: "IndieFlower";
-    font-weight: bold;
-    color: rgb(9, 82, 33);
+  font-family: "IndieFlower";
+  font-weight: bold;
+  color: rgb(9, 82, 33);
 }
 
 .p {
-    font-family: "Josefin";
-    font-weight: bold;
-    font-style: oblique;
-    color: crimson;
+  font-family: "Josefin";
+  font-weight: bold;
+  font-style: oblique;
+  color: crimson;
 }
 
 .q {
-    font-family: "IndieFlower";
-    font-weight: bold;
-    color: rgb(9, 82, 33);
+  font-family: "IndieFlower";
+  font-weight: bold;
+  color: rgb(9, 82, 33);
 }
 
 .r {
-    font-family: "Garamond";
-    font-weight: bold;
-    color: rgb(82, 9, 72);
+  font-family: "Garamond";
+  font-weight: bold;
+  color: rgb(82, 9, 72);
 }
 
 .Login {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: rgb(63, 27, 116);
-    width: 450px;
-    height: 500px;
-    margin: 80px auto;
-    border-radius: 15px;
-    text-align: center;
-    padding: 20px 0px 0px 0px;
-    color: blanchedalmond;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgb(63, 27, 116);
+  width: 450px;
+  height: 500px;
+  margin: 80px auto;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px 0px 0px 0px;
+  color: blanchedalmond;
 }
 
 .Login input {
-    background-color: #0a0a23;
-    border: 1px solid #0a0a23;
-    color: #ffffff;
-    margin: 10px 0 0 0;
-    width: 60%;
-    min-height: 2em; border-radius: 15px; padding-left: 15px;
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+  margin: 10px 0 0 0;
+  width: 60%;
+  min-height: 2em;
+  border-radius: 15px;
+  padding-left: 15px;
 }
 
 .field {
-    padding-top: 90px;
+  padding-top: 90px;
 }
 label {
-    display: block;
-    margin: 0.1rem 0;
-  }
-  .button1 {
-    background: rgb(25, 1, 163);
-    font-weight: bold;
-    border: 0;
-    color: rgb(240, 238, 230);
-    padding: 15px;
-    border-radius: 20px;
-    transition: 0.4s ease;
-    margin: 30px auto;
+  display: block;
+  margin: 0.1rem 0;
+}
+.button1 {
+  background: rgb(25, 1, 163);
+  font-weight: bold;
+  border: 0;
+  color: rgb(240, 238, 230);
+  padding: 15px;
+  border-radius: 20px;
+  transition: 0.4s ease;
+  margin: 30px auto;
 }
 
 .button1 {
-    cursor:pointer
+  cursor: pointer;
 }
 .button1 a:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
-.Login i {color: #ffffff; }
-.button1:focus{background-color: #ffffff;}
-.button1a:visited{color:rgb(0, 255, 0); text-decoration-style: double; }
+.Login i {
+  color: #ffffff;
+}
+.button1:focus {
+  background-color: #ffffff;
+}
+.button1a:visited {
+  color: rgb(0, 255, 0);
+  text-decoration-style: double;
+}
+button {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 2px solid rgb(61, 106, 255);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #143beb;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    margin: 0px 40%
+  }
+  
+  button:hover {
+    background: rgb(61, 106, 255);
+    color: #fff;
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  button:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  button::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+  
