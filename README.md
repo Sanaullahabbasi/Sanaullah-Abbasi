@@ -6,3 +6,5 @@ https://sanaullahabbasi.netlify.app/7th%20assignment%20(css%201st)/
 https://sanaullahabbasi.netlify.app/8th%20assignment%20(css%202nd)/
 # assignment-9
 https://sanaullahabbasi.netlify.app/9th%20assignment%20(css%203rd)/
+# assignment-10
+https://sanaullahabbasi.netlify.app/10th%20assignment%20(css%204th)/
