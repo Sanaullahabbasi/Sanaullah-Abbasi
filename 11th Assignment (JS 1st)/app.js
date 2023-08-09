@@ -1,4 +1,4 @@
-==========chapter 1 ==========
+// ==========chapter 1 ==========
 var firstName = "JavaScript Alert"
 
 alert(firstName)
@@ -19,7 +19,7 @@ var fifth = "JavaScript Alert \n\n\n Hello...! I can run JS through my web brows
 
 console.log (fifth)
 
-==========chapter 2 ==========
+// ==========chapter 2 ==========
 var userName = ""
 var myName = "sanaullah"
 var message = "Hello World"
@@ -49,7 +49,7 @@ document.write ("<h1>" + doc + "</h1>")
 
 alert (" “▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬”")
 
-==========chapter 3 ==========
+// ==========chapter 3 ==========
 
 var age = "I am 30 years old"
 alert (age)
@@ -68,7 +68,7 @@ var Quantity = "5"
 
 document.write(VisitorsName + " ordered " + Quantity + ProductTitle + " (s) on XYZ Clothing Store" )
 
-==========chapter 4 ==========
+// ==========chapter 4 ==========
 
 var Korangi = "nasir jump "
 var Landi = " and Downchowrangi"
@@ -83,8 +83,7 @@ document.write("<h1>" + legalVariable + "<br/>" + illegalVariable + "</h1>")
 var headingText = "Rule for naming JS variables";
 var text1 =
   "Variable names can only contain, numbers, $ and _ .For example $my _1stVariable";
-var text2 =
-  "Variable must begin with a letter, $ or _ for example $ name, _name or name";
+var text2 = "Variable must begin with a letter, $ or _ for example $ name, _name or name";
 var text3 = "Variable name are case senitative";
 var text4 = "Variable name should not be JS keyword";
 
@@ -94,7 +93,7 @@ document.write(
     "<h1/>" +
     "<br>" +
     text1 +
-    "<br>" +2
+    "<br>" +2 +
     text2 +
     "<br>" +
     text3 +
@@ -102,7 +101,7 @@ document.write(
     text4
 );
 
-==========chapter 5 ==========
+// ==========chapter 5 ==========
 var num1 = 3;
 var num2 = 5;
 document.write(num1 + num2)
