@@ -127,6 +127,17 @@ body {
     text-align: center;
     font-style: oblique;
   }
+  .card h5 {
+    color: #0a999bf4;
+    font-weight: 900px;
+    /* list-style-type: lower-roman; */
+    /* list-style-position: outside; */
+    padding: 5px;
+    font-family: "Poppins";
+    text-align: center;
+    font-style: oblique;
+    font-size: 30px;
+  }
 .all-assignments a:visited {
   color: #fff;
   text-decoration: none;
