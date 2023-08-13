@@ -10,3 +10,5 @@ https://sanaullahabbasi.netlify.app/9th%20assignment%20(css%203rd)/
 https://sanaullahabbasi.netlify.app/10th%20assignment%20(css%204th)/
 # assignment-11 (JS First)
 https://sanaullahabbasi.netlify.app/11th%20assignment%20(js%201st)/
+# assignment-12 (JS First)
+https://sanaullahabbasi.netlify.app/12th%20assignment%20(js%202nd)/
