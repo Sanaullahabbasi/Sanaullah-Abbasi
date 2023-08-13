@@ -108,36 +108,36 @@ body {
   text-align: center;
 }
 .card h3 {
-    color: #c4c2c1;
-    font-weight: 300;
-    list-style-type: lower-roman;
-    list-style-position: outside;
-    padding: 5px;
-    font-family: "Poppins";
-    text-align: center;
-    font-style: oblique;
-  }
-  .card h4 {
-    color: #25bb07;
-    font-weight: 300;
-    /* list-style-type: lower-roman; */
-    /* list-style-position: outside; */
-    padding: 5px;
-    font-family: "Poppins";
-    text-align: center;
-    font-style: oblique;
-  }
-  .card h5 {
-    color: #0a999bf4;
-    font-weight: 900px;
-    /* list-style-type: lower-roman; */
-    /* list-style-position: outside; */
-    padding: 5px;
-    font-family: "Poppins";
-    text-align: center;
-    font-style: oblique;
-    font-size: 30px;
-  }
+  color: #c4c2c1;
+  font-weight: 300;
+  list-style-type: lower-roman;
+  list-style-position: outside;
+  padding: 5px;
+  font-family: "Poppins";
+  text-align: center;
+  font-style: oblique;
+}
+.card h4 {
+  color: #25bb07;
+  font-weight: 300;
+  /* list-style-type: lower-roman; */
+  /* list-style-position: outside; */
+  padding: 5px;
+  font-family: "Poppins";
+  text-align: center;
+  font-style: oblique;
+}
+.card h5 {
+  color: #0a999bf4;
+  font-weight: 900px;
+  /* list-style-type: lower-roman; */
+  /* list-style-position: outside; */
+  padding: 5px;
+  font-family: "Poppins";
+  text-align: center;
+  font-style: oblique;
+  font-size: 28px;
+}
 .all-assignments a:visited {
   color: #fff;
   text-decoration: none;

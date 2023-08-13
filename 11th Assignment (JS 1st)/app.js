@@ -118,12 +118,14 @@ document.write( num)
 var result = num ++;
 console.log (result)
 console.log(num)
+// num = num + 7
 
-document.write(num + 7 )
+document.write(num + response )
 
 var result1 = num --;
 console.log (result1)
 console.log(num)
+
 
 console.log ((num + 7) / 3)
 console.log ((num + 7) % 3)
