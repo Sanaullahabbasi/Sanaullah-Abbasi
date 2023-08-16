@@ -563,6 +563,15 @@ body {
   .footer-logo-right img:hover{
     cursor: pointer;
   }
+  #btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+  }
+  .btn{
+    background-color: #e47239;
+  }
 @media only screen and (max-width: 576px) {
   .navbar > .container {
     display: flex !important;
@@ -613,5 +622,11 @@ body {
   }
   .JS-projects span {
     width: 75px;
+  }
+  .footer-section{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
   }
 }
