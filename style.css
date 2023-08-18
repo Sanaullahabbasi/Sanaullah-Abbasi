@@ -103,10 +103,17 @@ body {
   width: 90%;
   height: 1000px;
   position: relative;
+  border: 4px solid white;
+  display: flex;
+  justify-content: center;
 }
-.JS-projects {
-  position: absolute;
-  left: 320px;
+.JS-projects > img {
+  /* position: absolute;
+  left: 320px; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; */
 }
 .CSS-projects {
   position: absolute;
@@ -570,8 +577,12 @@ body {
     display: none;
   }
   .btn{
-    background-color: #e47239;
+    background-color:#18185b
   }
+  .btn:hover{
+    background-color:#239b9b
+  }
+  
 @media only screen and (max-width: 576px) {
   .navbar > .container {
     display: flex !important;

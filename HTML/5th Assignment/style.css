@@ -8,8 +8,13 @@ th {
   color: hsl(0, 0%, 92%);
   background-color: midnightblue;
 }
-.btn {
-    position: relative;
+.body {
+  position: relative;
+}
+.after-footer-btn {
+    position: absolute;
+    left: 5%;
+    bottom: 2px;
     padding: 10px 20px;
     border-radius: 7px;
     border: 2px solid rgb(61, 106, 255);
@@ -24,10 +29,10 @@ th {
     -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
-    margin: 0px 40%
+    margin: 0px 40%;
   }
   
-  .btn:hover {
+  .after-footer-btn:hover {
     background: rgb(61, 106, 255);
     color: #fff;
     box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
@@ -36,14 +41,14 @@ th {
     transition: all 0.2s ease-out;
   }
   
-  .btn:hover::before {
+  .after-footer-btn:hover::before {
     -webkit-animation: sh02 0.5s 0s linear;
     -moz-animation: sh02 0.5s 0s linear;
     animation: sh02 0.5s 0s linear;
   }
   
-  .btn::before {
-    content: '';
+  .after-footer-btn::before {
+    content: "";
     display: block;
     width: 0px;
     height: 86%;
@@ -76,10 +81,9 @@ th {
     }
   }
   
-  .btn:active {
+  .after-footer-btn:active {
     box-shadow: 0 0 0 0 transparent;
     -webkit-transition: box-shadow 0.2s ease-in;
     -moz-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
   }
-  

@@ -1,5 +1,10 @@
+.body {
+  position: relative;
+}
 .after-footer-btn {
-    position: relative;
+    position: absolute;
+    left: 5%;
+    bottom: 2px;
     padding: 10px 20px;
     border-radius: 7px;
     border: 2px solid rgb(61, 106, 255);

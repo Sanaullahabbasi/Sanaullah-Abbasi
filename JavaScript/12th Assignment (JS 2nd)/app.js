@@ -3,7 +3,7 @@
 // ==Question No 1 ==
 var num = 10;
 document.write(
-  "Restult: " + "<br/>" + "<br/>" + "The Value of a is: " + num + "<br/>"
+  "Restult: " + "<br/>" + "<br/>" + "The Value of a is: " + num + "<br/>" + " " + "<hr/>" 
 );
 
 num = ++num;
@@ -50,7 +50,7 @@ document.write(
     "<br/>"
 );
 
-// ==Question No 2 ==
+// // ==Question No 2 ==
 var a = 2,
   b = 1;
 var result = --a - --b + ++b + b--;
@@ -105,12 +105,13 @@ document.write(
 );
 
 
-//==Question No 3 ==
+// //==Question No 3 ==
 
 var userName = prompt("Enter your user name here")
 console.log(userName)
+alert("AOA")
 
-//==Question No 5 ==
+// //==Question No 5 ==
 var value = prompt("input a number I will show the table of its", 5)
 document.write("TABLE OF" + " " + value + "<br/>" + "<br/>" +
   value + " " +"x" +" " + "1" + " " + "=" + (value*1) + "<br/>" +
@@ -125,7 +126,7 @@ document.write("TABLE OF" + " " + value + "<br/>" + "<br/>" +
   value + " " +"x" +" " + "10" + " " + "=" + (value*10) + "<br/>" 
 )
 
-//==Question No 6 ==
+// //==Question No 6 ==
 var firstSubject = prompt("Enter your firt subject name here");
 var secondSubject = prompt("Enter your second subject name here");
 var thirdSubject = prompt("Enter your third subject name here");
@@ -150,9 +151,9 @@ document.write("<table>"+ "<tr>" + "<th>" + "Subject" + "</th>" + "<th>" + "Tota
 + "</tr>"
 + "</table>")
 
-// ==========chapter 9-11 ==========
+// // ==========chapter 9-11 ==========
 
-// ==Question No 1 ==
+// // ==Question No 1 ==
 
 var cityName = prompt ("Enter your city name")
 if (cityName === "Karachi"){
@@ -169,7 +170,7 @@ if (gender === "Female"){
     alert(" Good Morning Ma'am")
 }
 
-// ==Question No 3 ==
+// // ==Question No 3 ==
 
 var signalColor1 = prompt ("which color is used in top of signal light at road")
 var signalColor2 = prompt ("which color is used in center of signal light at road")
@@ -190,7 +191,7 @@ if (signalColor3 === "Green"){
 else {
     alert("Your are not eleigable for licence" + "\n" + "Learn the traffic rules and try again" + "\n" + "Thank your for appreaing in exam")}
 
-// ==Question No 4 ==
+// // ==Question No 4 ==
 
 var fuel = prompt ("Check fuel of your vehicle in ltr")
 if (fuel < 0.25){
@@ -208,6 +209,7 @@ alert("given condition for variable a is true");
 }
 
 var b = 82;
+
 if (b++ === 83){
 alert("given condition for variable b is true");
 }
@@ -243,7 +245,7 @@ if("car" < "cat"){
     alert("car is smaller than cat");
     }
 
-// ==Question No 6 ==
+// // ==Question No 6 ==
 
 var subject1 = prompt("Enter your first subject here");
 var subject2 = prompt("Enter your second subject here");
@@ -309,7 +311,7 @@ else if (percentage <= 60){
             )
             }
 
-// ==Question No 7 ==
+// // ==Question No 7 ==
 
 var scretNumber = prompt("Guess the Scret number")
 if (+scretNumber === 7){
@@ -323,7 +325,7 @@ else {
 }
 console.log(typeof scretNumber)
 
-// ==Question No 8 ==
+// // ==Question No 8 ==
 
 var factor = prompt ("Write a number and check which is divisible by 3")
 var resultFinal = (+factor % 3)
@@ -332,11 +334,11 @@ if (resultFinal === 0){
     alert("Yes it can be divisible by 3")
 }
 else {
-alert("No it" + " " + factor + " " + "cannot be divide by 3")
+alert("No" + " " + factor + " " + "cannot be divide by 3")
 }
 console.log (typeof factor)
 
-// ==Question No 9 ==
+// // ==Question No 9 ==
 
 var checkNumber = prompt("Check the numbe is even or odd")
 var checkevenodd = checkNumber % 2
@@ -348,7 +350,7 @@ else {
     alert ("The" + " " + checkNumber + " " + "is odd")
 }
 
-// ==Question No 10 ==
+// // ==Question No 10 ==
 
 var temp = prompt("Enter your room temperature value to weather status")
 if (temp > 40){
@@ -364,7 +366,7 @@ else if (temp > 10) {
     alert("OMG! Today’s weather is so Cool.")
 }
 
-// ==Question No 11 ==
+// // ==Question No 11 ==
 var firstNumber = prompt("Want to calculte your some value so write first number")
 var secondNumber = prompt("Want to calculte your some value so write second number")
 var operator = prompt("Define which operation would you like to use", "e.g +, -, *, /, %")
@@ -391,9 +393,9 @@ else {
     alert("Choose the correct operator")
 }
 
-// ==========chapter 12 - 13 ==========
+// // ==========chapter 12 - 13 ==========
 
-// ==Question No 1 ==
+// // ==Question No 1 ==
 
 var character = prompt("Enter a value and check its status");
 var character = A=65, B=66, C=67; D=68, E=69, F=70, G=71, H=72; I=73, J=74, K=75, L=76, M=77; N=78, O=79, P=80, Q=81, R=82; S=83, T=84, U=85, V=86, W=87; X=88, Y=89, Z=90;
@@ -405,7 +407,7 @@ else {
     alert("This is a number")
 }
 
-// ==Question No 2 ==
+// // ==Question No 2 ==
 
 var integer = prompt("Enter first intiger here")
 var integer2 =prompt ("Enter second intiger here")
@@ -413,7 +415,7 @@ var integer2 =prompt ("Enter second intiger here")
 if(integer > integer2) {
     document.write (integer + " " + "is larger than" + " " + integer2)
 }
-else if(integer < integer2) {
+else if(integer2 > integer) {
     document.write (integer2 + " " +"is larger than" + " " + integer)
 }
 else if(integer === integer2) {
@@ -421,7 +423,7 @@ else if(integer === integer2) {
 }
 else {alert("Define a valid number")}
 
-// ==Question No 3 ==
+// // ==Question No 3 ==
 
 var asknum = prompt ("Enter a numbe i will define you it status")
 if (asknum > 0) {
@@ -433,24 +435,23 @@ else if (asknum < 0) {
 else if (asknum === 0) {
     document.write(asknum + " " + "is a Zero")
 }
-// else {
-//     document.write ("Write a valid number")
-// }
+else {
+    document.write ("Write a valid number")
+}
 
-// ==Question No 4 ==
+// // // ==Question No 4 ==
 
 var vowel = prompt ("Enter a single alphabat i will define is vowel or not");
 
 if (vowel === "a" || vowel === "e" || vowel === "i" || vowel === "o" || vowel === "u"){
     document.write ("The" + " " + vowel + " " + "is a vowel word")
 }
-else {document.write("The" + " " + vowel + " " + "is not a vowel")}
+else {document.write("The" + " " + vowel + " " + "This is a consonant")}
 
-// ==Question No 5 ==
+// // ==Question No 5 ==
 
-var correctPassword = "Pakistan"
 var askPassword = prompt ("Enter your password to login and earn $200")
-
+var askPassword2 = prompt("Enter your password again")
 if (Object.entries(askPassword).length === 0){
     Swal.fire({
         icon: 'error',
@@ -459,7 +460,7 @@ if (Object.entries(askPassword).length === 0){
         footer: '<a href="">Why do I have this issue?</a>'
       })    
 }
-else if (correctPassword === askPassword){
+else if (askPassword === askPassword2){
     alert ("Correct! The password you entered matches the original password")
 
 }
@@ -475,15 +476,15 @@ else {
       })
 }
 
-// ==Question No 6 ==
-var greeting;
-var hour = 13;
-if (hour < 18) {
-greeting = "Good day"}
-else {
-greeting = "Good evening"}
+// // ==Question No 6 ==
 
-// ==Question No 7 ==
+var greeting = prompt("Enter your hours or dates here")
+if (greeting < 18) {
+alert("Good day") }
+else {
+alert("Good evening") }
+
+// // ==Question No 7 ==
 
 var time = prompt("Enter your city current time here in hours")
 
