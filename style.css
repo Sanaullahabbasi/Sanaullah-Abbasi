@@ -107,14 +107,6 @@ body {
   display: flex;
   justify-content: center;
 }
-.JS-projects > img {
-  /* position: absolute;
-  left: 320px; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row; */
-}
 .CSS-projects {
   position: absolute;
   bottom: 20px;
