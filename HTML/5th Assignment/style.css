@@ -8,7 +8,7 @@ th {
   color: hsl(0, 0%, 92%);
   background-color: midnightblue;
 }
-.body {
+body {
   position: relative;
 }
 .after-footer-btn {

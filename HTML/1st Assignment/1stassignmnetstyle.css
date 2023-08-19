@@ -40,7 +40,7 @@ body {
   background-size: cover;
   background-image: url(https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?w=2000);
 }
-.body {
+body {
   position: relative;
 }
 .after-footer-btn {
