@@ -112,6 +112,7 @@ body {
   bottom: 20px;
   left: 30px;
   rotate: 30deg;
+  z-index: 1;
 }
 .HTML-projects {
   position: absolute;
@@ -119,7 +120,7 @@ body {
   right: 30px;
   rotate: -30deg;
 }
-.JS-projects h6 {
+.JS-projects h6, .CSS-projects h6 {
   font-family: "Tektur";
   color: white;
   text-align: center;
@@ -131,13 +132,22 @@ body {
 .JS-projects {
   position: relative;
 }
-.JS-projects span {
+.JS-projects span{
   border-radius: 10px;
   /* background-color: red; */
   width: 120px;
   position: absolute;
   top: 19px;
   right: 10px;
+  z-index: 1;
+}
+.CSS-projects span {
+  border-radius: 10px;
+  /* background-color: red; */
+  width: 120px;
+  position: absolute;
+  top: 19px;
+  left: 10px;
   z-index: 1;
 }
 .JS-projects,
