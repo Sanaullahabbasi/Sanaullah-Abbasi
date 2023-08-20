@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(font/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Jameel";
+  src: url(font/Jameel\ Noori\ Nastaleeq\ Kasheeda.ttfs);
+}
+.navbar {
+  background-color: rgb(242, 228, 228) !important;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0 2px 2px 1px rgba(240, 38, 7, 0.2);
+}
+.nav-item > a {
+  font-family: "Poppins";
+  font-size: 18px;
+  color: black !important;
+  font-weight: bold;
+}
+.nav-item > a {
+  margin-left: 10px;
+}
+.navbar-nav .urdu {
+  font-family: "Jameel";
+  color: #c31b67;
+}
+
+@media only screen and (max-width: 992px) {
+  .collapse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container-fluid {
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+  }
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-nav li {
+    text-decoration: underline crimson;
+    margin-top: 10px;
+  }
+  .navbar-brand img {
+    margin: 15px 0px 10px 0px;
+  }
+}
