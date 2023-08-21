@@ -6,6 +6,9 @@
   font-family: "Jameel";
   src: url(font/Jameel\ Noori\ Nastaleeq\ Kasheeda.ttfs);
 }
+body{
+  background-color: rgb(242, 228, 228)
+}
 .navbar {
   background-color: rgb(242, 228, 228) !important;
   border-radius: 0px 0px 10px 10px;
@@ -24,7 +27,15 @@
   font-family: "Jameel";
   color: #c31b67;
 }
-
+.false-celling-card-section {
+  margin: 15px 10px 10px 15px;
+}
+.false-celling-intro-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 35px 20px 30px 25px;
+}
 @media only screen and (max-width: 992px) {
   .collapse {
     display: flex;
