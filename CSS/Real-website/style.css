@@ -28,7 +28,7 @@ body{
   color: #c31b67;
 }
 .false-celling-card-section {
-  margin: 15px 10px 10px 15px;
+  margin: 25px 30px 30px 25px;
 }
 .false-celling-intro-section {
   display: flex;
@@ -54,6 +54,30 @@ padding-bottom: 10px;
   font-size: 40px;
   font-style: oblique;
 }
+.false-celling-intro-section-right h3, .false-celling-intro-section-right P {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+.carousel-item h5, .carousel-item p {
+  color: #000000;
+  /* background-color: rgba(226, 216, 215, 0.5); */
+  font-weight: bold;
+  text-shadow: 1px 1px 2px white;
+
+
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .collapse {
     display: flex;
