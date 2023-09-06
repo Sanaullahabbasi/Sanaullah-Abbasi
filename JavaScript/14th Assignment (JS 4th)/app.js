@@ -96,26 +96,168 @@
 
 // ==Question No 7 ==
 
-var arr = ["cake", "apple pie", "cookie", "chips", "patties"];
-var input = prompt(
-  "Welcome to ABC Bakery, What what do you want to order sir/ma'am?"
-);
-input = input.toLowerCase();
-var firstCap = input.charAt(0).toUpperCase();
-var fullInput = firstCap + input.slice(1).toLowerCase();
-var flag = false;
-for (var i = 0; i < arr.length; i++) {
-  if (arr[i] === input) {
-    console.log(
-        input + " is availabe at index " + arr.indexOf[input] + " in our bakery"
-      );
-  }
-  else {
-    console.log(  
-      "we are sorry. " + input + " is " + "not a availabe " + " in our bakery"
-    );}
+// var arr = ["cake", "apple pie", "cookie", "chips", "patties"];
+// var input = prompt(
+//   "Welcome to ABC Bakery, What what do you want to order sir/ma'am?"
+// );
+// input = input.toLowerCase();
+// var firstCap = input.charAt(0).toUpperCase();
+// var fullInput = firstCap + input.slice(1).toLowerCase();
+// var flag = false;
+// for (var i = 0; i < arr.length; i++) {
+//   if (arr[i] === input) {
+//     console.log(
+//       input + " is availabe at index " + arr.indexOf(arr[i]) + " in our bakery"
+//     );
+//     break
+//   }
 
-}
+//   else {
+//     console.log(
+//       "we are sorry. " + input + " is " + "not a availabe " + " in our bakery"
+//     );
+//   }
+// }
+
+// ==Question No 8 ==
+
+// var number = [24, 53, 78, 91, 12];
+// var maxNum = number[0];
+
+// for (var i = 0; i < number.length; i++) {
+//   if (number[i] > maxNum) {
+//     maxNum = number[i];
+//   }
+// }
+// document.write("Array Items: 24, 53, 78, 91, 12 " + "<br/>"+ "The largest Number is " + maxNum);
+
+// ==Question No 9==
+
+// var number = [24, 53, 78, 91, 12];
+// var maxNum = number[0];
+
+// for (var i = 0; i < number.length; i++) {
+//   if (number[i] < maxNum) {
+//     maxNum = number[i];
+//   }
+// }
+// document.write("Array Items: 24, 53, 78, 91, 12 " + "<br/>"+ "The Smallest Number is " + maxNum);
+
+// ==Question No 9==
+// document.write("<h1>" + "Multiple of 5 upto 100 are "+ "</h1>" + "<br/>" )
+// for (var i=1; i<=20; i++){
+//     document.write(+ i*5 + ", ")
+// }
+
+// ==========chapter 21 - 25 ==========
+
+// ==Question No 1 ==
+
+// var firstName = prompt("Enter your first name here");
+// var lastName = prompt("Enter your last name here");
+// var lowerFirst = firstName.slice(1).toLowerCase();
+// var lowerLast = lastName.slice(1).toLowerCase();
+// firstName = firstName.charAt().toUpperCase();
+// lastName = lastName.charAt().toUpperCase();
+// var fullName = firstName + lowerFirst + " " + lastName + lowerLast;
+// alert("Hello " + fullName);
+
+// ==Question No 2 ==
+
+// var favorite = prompt("Tell me about your favorite mobile phone model");
+// document.write(
+//   "Your favorite phone is: " +
+//     "<b>" +
+//     favorite +
+//     "</b>" +
+//     "<br/>" +
+//     "Length of String:" +
+//     "<b>" +
+//     favorite.length +
+//     "</b>"
+// );
+
+// ==Question No 3 ==
+
+// var nationality = "Pakistani"
+// document.write("String: " + nationality + "<br/>" + "index of 'n':" + nationality.indexOf("n"))
+
+// ==Question No 4 ==
+
+// var str = "Hello World"
+// document.write("String: " + str + "<br/>" + "index of 'l':" + str.lastIndexOf("l"))
+
+// ==Question No 5 ==
+
+// var nationality = "Pakistani"
+// document.write("String: " + nationality + "<br/>" + "index of '3': " + nationality.charAt(3))
+
+// ==Question No 6 ==
+
+// var firstName = prompt("Enter your first name here");
+// var lastName = prompt("Enter your last name here");
+// var lowerFirst = firstName.slice(1).toLowerCase();
+// var lowerLast = lastName.slice(1).toLowerCase();
+// firstName = firstName.charAt().toUpperCase();
+// lastName = lastName.charAt().toUpperCase();
+// var fullName = firstName.concat(lowerFirst, " ", lastName, lowerLast);
+// alert("Hello " + fullName);
+
+// ==Question No 7 ==
+
+// var city = "Hyderabad";
+// document.write("City: " + city + "<br/>" + "After replacemnet: " + city.replace("Hyder", "Islam"))
+
+// ==Question No 8 ==
+
+// var message = "Ali and Sami are best friends. They play cricket and football together.";
+// document.write(message.replace(/and/g, "&"))
+
+// ==Question No 9 ==
+
+// var str = "472";
+// document.write(
+//   "Value: " +
+//     str +
+//     "<br/>" +
+//     "Type: " +
+//     typeof str +
+//     "<br/>" +
+//     "Value: " +
+//     str +
+//     "<br/>" +
+//     "Type: " +
+//     typeof parseInt(str)
+// );
+
+// ==Question No 10 ==
+
+// var input = prompt("Write a sentance here and I will caplitize it")
+// document.write("User input: " + input + "<br/>" + "Upper Case: " + input.toUpperCase())
+
+
+// ==Question No 11 ==
+
+// var input = prompt("Write a word here and I will convert it to title case")
+// document.write("User input: " + input + "<br/>" + "Title Case: " + input.charAt().toUpperCase() + input.slice(1).toLowerCase() )
+
+
+
+// ==Question No 12 ==
+
+// var num = 35.36;
+// document.write("Number: " + num + "<br/>" + "Result: " + String(num*100))
+
+
+// ==Question No 13 ==
+
+
+// var password = Math.random() * 10000000000;
+// var hasAlphabets = /[a-zA-z]/.test(password);
+// var hasNumber = /[0-9]/.test(password);
+// var hasSpec = /[!-*]/.test(password);
+// console.log(Math.round(password) + hasAlphabets + hasNumber + hasSpec);
+// console.log(hasSpec)
 
 // if (flag) {
 //   console.log(
@@ -126,104 +268,3 @@ for (var i = 0; i < arr.length; i++) {
 //     "we are sorry. " + input + " is " + "not a availabe " + " in our bakery"
 //   );
 // }
-
-// ==Question No 8 ==
-
-// var studentsName = ["Mazhar", "Tabish", "Imran"];
-// var studentsScore = [420, 410, 480];
-// var totalScore = 500;
-
-// document.write(
-//     "Score of " + studentsName[0] + " " + "is" + " " + studentsScore[0] + "."
-//     + " " +"Percentage: " + ((studentsScore[0] / totalScore) * 100) + "%" + "<br/>"
-//     + "Score of " + studentsName[1] + " " + "is" + " " + studentsScore[1] + "."
-//     + " " +"Percentage: " + ((studentsScore[1] / totalScore) * 100) + "%" + "<br/>"
-//     +"Score of " + studentsName[2] + " " + "is" + " " + studentsScore[2] + "."
-//     + " " +"Percentage: " + ((studentsScore[2] / totalScore) * 100) + "%" )
-
-// ==Question No 9 ==
-
-// var namesOfColor = ["Black", "Grey", "Red", "Blue", "Orange", "White", "Brown", "Pink", "Yellow", "Green", "Purple"]
-
-//======>>> part a <<<=====
-// var addStartColor = prompt("Here is a list of color check and add your color name here \n" + namesOfColor )
-
-// namesOfColor.unshift(addStartColor)
-// console.log(namesOfColor)
-
-//======>>> part b <<<=====
-// var addEndColor = prompt("Here is a list of color check and add your color name here \n" + namesOfColor )
-
-// namesOfColor.push(addEndColor)
-// console.log(namesOfColor)
-
-//======>>> part c <<<=====
-// var addStartColor1 = prompt("Here is a list of color check and add your first color name here \n" + namesOfColor )
-// var addStartColor2 = prompt("Here is a list of color check and add your second color name here \n" + namesOfColor )
-
-// namesOfColor.unshift(addStartColor1, addStartColor2)
-// console.log(namesOfColor)
-
-//======>>> part d <<<=====
-
-// namesOfColor.shift()
-// console.log(namesOfColor)
-
-//======>>> part e <<<=====
-// namesOfColor.pop()
-// console.log(namesOfColor)
-
-//======>>> part f <<<=====
-
-// var listOfColor = prompt("Here is a list of color check it define on which position you want to add your color name \n" + namesOfColor )
-// var nameOfPositionColor = prompt("Enter desired color name which you want to add in " + listOfColor )
-
-// namesOfColor.splice(listOfColor, 0, nameOfPositionColor)
-// console.log(namesOfColor)
-
-//======>>> part g <<<=====
-
-// var listOfColorDel = prompt("Here is a list of color check it define on which position you want to remove your color name \n" + namesOfColor )
-// var howManyDel = prompt("Define how many color you want to remove from " + listOfColorDel + " to")
-
-// namesOfColor.splice(listOfColorDel, howManyDel)
-// console.log(namesOfColor)
-
-// ==Question No 10 ==
-
-// var scoreOfStudents = [320, 230, 480, 120]
-// document.write ("<br/>" + "Students of Score: " + scoreOfStudents[0] + " "  + scoreOfStudents[1] + " "  + scoreOfStudents[2] + " "  + scoreOfStudents[3] +
-// "<br/>" + "Ordered Score of Students: " + scoreOfStudents.sort())
-
-// ==Question No 11 ==
-
-// var cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"]
-// var copyCities = cities.slice(2, 4)
-
-// document.write("<br/>" + "Cities List " + cities + "<br/>" +  "<br/>" +
-// "Selected cities list: " + "<br/>" + copyCities)
-
-// ==Question No 12 ==
-
-// var arr = ["This ", " is ", " my ", " cat"];
-
-// document.write ("<h1>" + "Array" + "</h1>" + "<br/>" + arr + "<br/>" + "<br/>" +
-// "<h1>" + "String" + "</h1>" + "<br/>" + arr.join(" ")
-// )
-
-// ==Question No 13 ==
-
-// var list = ["Keyboard", "Mouse", "Printer", "Monitor"]
-
-// document.write("Devices: " + "<br/>" + list + "<br/>" + "<br/>" + "Out:" + "<br/>"  + list.shift()  + "<br/>" + "Out:" + "<br/>"  + list.shift()  + "<br/>" + "Out:" + "<br/>"  + list.shift()  + "<br/>" + "Out:" + "<br/>"  + list.shift() )
-
-// ==Question No 14 ==
-
-// var list = ["Keyboard", "Mouse", "Printer", "Monitor"]
-
-// document.write("Devices: " + "<br/>" + list + "<br/>" + "<br/>" + "Out:" + "<br/>"  + list.pop()  + "<br/>" + "Out:" + "<br/>"  + list.pop()  + "<br/>" + "Out:" + "<br/>"  + list.pop()  + "<br/>" + "Out:" + "<br/>"  + list.pop() )
-
-// ==Question No 15 ==
-
-// var phone = [" Apple ", " Samsung ", " Motorola ", " Nokia ", " Sony ", " Haier "]
-// document.write( phone)
