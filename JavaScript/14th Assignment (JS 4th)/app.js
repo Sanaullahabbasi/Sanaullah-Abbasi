@@ -252,19 +252,70 @@
 // ==Question No 13 ==
 
 
-// var password = Math.random() * 10000000000;
-// var hasAlphabets = /[a-zA-z]/.test(password);
-// var hasNumber = /[0-9]/.test(password);
-// var hasSpec = /[!-*]/.test(password);
-// console.log(Math.round(password) + hasAlphabets + hasNumber + hasSpec);
-// console.log(hasSpec)
+// var userName = prompt("Enter user name here")
+// var spc = ["!", ",", ".", "@"]
+// var store = ""
 
-// if (flag) {
-//   console.log(
-//     input + " is availabe at index " + a.indexOf[a] + " in our bakery"
-//   );
-// } else {
-//   console.log(
-//     "we are sorry. " + input + " is " + "not a availabe " + " in our bakery"
-//   );
+// for (var i=0; i<userName.length; i++){
+//     if (spc[0] !== userName[i] && spc[1] !== userName[i] && spc[2] !== userName[i] && spc[3] !== userName[i] && spc[4] !== userName[i]){
+//         alert("Hi " + userName)
+//     }
+//     else{
+//         alert("Special character @!,. are not allowed")
+//     }
 // }
+
+
+
+// ==Question No 14 ==
+
+// var arr = ["cake", "apple pie", "cookie", "chips", "patties"];
+// var input = prompt(
+//   "Welcome to ABC Bakery, What what do you want to order sir/ma'am?"
+// );
+// input = input.toLowerCase();
+// var firstCap = input.charAt(0).toUpperCase();
+// var fullInput = firstCap + input.slice(1).toLowerCase();
+// var flag = false;
+// for (var i = 0; i < arr.length; i++) {
+//   if (arr[i] === input) {
+//     console.log(
+//       input + " is availabe at index " + arr.indexOf(arr[i]) + " in our bakery"
+//     );
+//     break
+//   }
+
+//   else {
+//     console.log(
+//       "we are sorry. " + input + " is " + "not a availabe " + " in our bakery"
+//     );
+//   }
+// }
+
+
+// ==Question No 16 ==
+
+
+// var university = "University of Karachi";
+// uniToArray = university.split();
+// for (var i=0; i<university.length; i++){
+//     console.log(university[i])
+// }
+
+
+
+// ==Question No 17 ==
+
+
+// var user = prompt("Enter your user name")
+// console.log(user[user.length-1])
+
+
+
+// ==Question No 18 ==
+
+
+// var text = "the quick brown fox jumps over the lazy dog";
+// var match = text.match(/the/g).length
+
+// document.write("Text: the quick brown fox jumps over the lazy dog" +  "<br/>" + "There are " + match + " occurance(s) of word the" )
