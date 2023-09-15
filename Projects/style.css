@@ -21,7 +21,7 @@
   font-family: "Poppins";
 }
 .display input {
-  padding: 34px 71px;
+  padding: 22px 4px;
   margin: 15ps 0px;
   border-radius: 5px;
   border: 1px solid #aebed5;
@@ -34,4 +34,9 @@
 }
 #equal{
     width: 150px;
+}
+form > .display > input {
+  font-family: "Poppins";
+  font-size: 25px;
+  text-align: right;
 }
