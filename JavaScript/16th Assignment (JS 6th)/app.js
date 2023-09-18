@@ -167,17 +167,49 @@
 
 // function longestWord(str1) {
 //   var toConvertArr = str1.split(" ");
-//   var lar = "";
+//   var lar = 0;
 //   for (var i = 0; i < toConvertArr.length; i++) {
-//     for (var j = 0; j < toConvertArr[i].length; i++) {
-//       if (toConvertArr[i].length > toConvertArr[j].length) {
-//         lar += toConvertArr[i];
-//       } else if (toConvertArr[i].length < toConvertArr[j].length) {
-//         lar += toConvertArr[j];
-//       }
+//     if (toConvertArr[i].length > lar) {
+//       lar = toConvertArr[i];
 //     }
-//     console.log(toConvertArr[i]);
 //   }
-//   // return wholeText.join(' ')
+//   return lar;
 // }
-// longestWord("sanaullah abbasi");
+// console.log(longestWord("sanaullah abajabasakaba abbasi"));
+
+// =============>>>>>>   Question No 13     <<<<<<=============
+
+// function count(a, b) {
+//   var letterCount = 0;
+//   for (var i = 0; i < a.length; i++) {
+//     if (a.charAt(i) === b) {
+//       letterCount += 1;
+//     }
+//   }
+//   return letterCount;
+// }
+
+// console.log(count("JSResourceS.com", "o"));
+
+
+
+// =============>>>>>>   Question No 14     <<<<<<=============
+
+// function calCercum (rad){
+
+//   var cal = Math.round(2 * (22/7) * rad)
+//   return cal
+
+// }
+
+// console.log(calCercum(2))
+
+
+// function calAreaOfCircle (rad){
+
+//   var cal = Math.round( (22/7) * Math.pow(rad,2))
+//   return cal
+
+// }
+
+// console.log(calAreaOfCircle(3))
