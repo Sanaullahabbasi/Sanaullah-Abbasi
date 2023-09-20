@@ -20,6 +20,10 @@
   font-size: 20px;
   font-family: "Poppins";
 }
+.btn:active {
+  transform: translateY(4px);
+  box-shadow: 2px 4px 9px #666;
+}
 .display input {
   padding: 22px 4px;
   margin: 15ps 0px;
@@ -32,16 +36,39 @@
   justify-content: space-between;
   align-items: center;
 }
-#equal{
-    width: 150px;
+#equal {
+  width: 150px;
+  background-color: #1434eb;
+  font-weight: bolder;
+  color: #ffffff;
+  font-weight: 600;
 }
 form > .display > input {
   font-family: "Poppins";
   font-size: 25px;
   text-align: right;
 }
-
-
+.Cal-body {
+  border: 1px solid #4e62bb;
+  padding: 15px;
+  border-radius: 15px;
+}
+.Cal-body h1 {
+  text-align: center;
+  font-family: "Poppins";
+  text-shadow: 4px 3px 4px #4e4f57;
+  color: #1434eb;
+  font-style: oblique;
+}
+.del {
+  background-color: rgb(170, 15, 15);
+  color: white;
+}
+.operator {
+  color: green;
+  font-weight: bolder;
+  font-style: oblique;
+}
 .after-footer-btn {
   position: absolute;
   left: 5%;
@@ -118,4 +145,17 @@ form > .display > input {
   -webkit-transition: box-shadow 0.2s ease-in;
   -moz-transition: box-shadow 0.2s ease-in;
   transition: box-shadow 0.2s ease-in;
+}
+
+@media only screen and (max-width: 350px) {
+  .Cal-body {
+    width: 100%;
+  }
+  .Cal-body h1 {
+    font-size: 26px;
+  }
+  .btn {
+    width: 43px;
+    font-size: 20px;
+  }
 }

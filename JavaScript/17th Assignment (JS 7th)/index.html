@@ -8,36 +8,37 @@
   </head>
   <body>
     <div class="container">
+      <div class="Cal-body">
       <div>
-        <h1>Welcome to my Calculator</h1>
+        <h1>Basic Calculator</h1>
       </div>
       <form action="">
         <div class="display">
           <input type="text"  name="display" id="screen" />
         </div>
         <div class="row">
-            <div ><input class="btn" type="button" value="AC" onclick="clearInput()"></div>
+            <div ><input class="btn del" type="button" value="AC" onclick="clearInput()"></div>
             <div ><input class="btn" type="button" value="DE" onclick="del()"></div>
             <div ><input class="btn" type="button" value="." onclick="inputValue('.') "></div>
-            <div ><input class="btn" type="button" value="/" onclick="inputValue('/') "></div>
+            <div ><input class="btn operator" type="button" value="/" onclick="inputValue('/') "></div>
         </div>
         <div class="row">
             <div ><input class="btn" type="button" value="7" onclick="inputValue('7')"></div>
             <div ><input class="btn" type="button" value="8" onclick="inputValue('8') "></div>
             <div ><input class="btn" type="button" value="9" onclick="inputValue('9') "></div>
-            <div ><input class="btn" type="button" value="*" onclick="inputValue('*')"></div>
+            <div ><input class="btn operator" type="button" value="*" onclick="inputValue('*')"></div>
             </div>
         <div class="row">
             <div ><input class="btn" type="button" value="4" onclick="inputValue('4')"></div>
             <div ><input class="btn" type="button" value="5" onclick="inputValue('5')"></div>
             <div ><input class="btn" type="button" value="6" onclick="inputValue('6') "></div>
-            <div ><input class="btn" type="button" value="-" onclick="inputValue('-')"></div>
+            <div ><input class="btn operator" type="button" value="-" onclick="inputValue('-')"></div>
          </div>
         <div class="row">
             <div ><input class="btn" type="button" value="1" onclick="inputValue('1') "></div>
             <div ><input class="btn" type="button" value="2" onclick="inputValue('2')"></div>
             <div ><input class="btn" type="button" value="3" onclick="inputValue('3') "></div>
-            <div ><input class="btn" type="button" value="+" onclick="inputValue('+') "></div>
+            <div ><input class="btn operator" type="button" value="+" onclick="inputValue('+') "></div>
          </div>
         <div class="row">
             <div ><input class="btn" type="button" value="00" onclick="inputValue('00') "></div>
@@ -45,6 +46,7 @@
             <div ><input class="btn" id="equal" type="button" value="=" onclick="result()"></div>
          </div>
       </form>
+    </div>
     </div>
     <a href="../../Index.html"
     ><button class="after-footer-btn">Main Page</button>
