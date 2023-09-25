@@ -1,5 +1,5 @@
 body{
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 0px;
     margin: 0px;
     position: relative;
@@ -24,8 +24,7 @@ body{
   height: 50px;
   /* background-color: red; */
   position: absolute;
-  top: 435px;
-  /* top: 150px; */
+  top: 480px;
 }
 
 .animate {
@@ -33,21 +32,21 @@ body{
 }
 @keyframes character {
   0% {
-    top: 435px;
+    top: 480px;
   }
   30% {
-    top : 200px;
+    top : 245px;
   }
   70% {
-    top: 200px;
+    top: 245px;
   }
   100% {
-    top : 435px;
+    top : 480px;
   }
 }
 #block {
-  width: 150;
-  height: 150px;
+  width: 150px;
+  height: 180px;
   position: absolute;
   animation: block 1.9s infinite linear;
   left: 1100px;
@@ -58,7 +57,7 @@ body{
     position: absolute;
     bottom: 0px;
     width: 150px;
-    height: 150px;
+    height: 180px;
 }
 
 @keyframes block {
@@ -75,6 +74,5 @@ body{
   position: absolute;
   bottom: -7px;
   left: 60px;
-  /* left: 1050px; */
   z-index: 1px;
 }

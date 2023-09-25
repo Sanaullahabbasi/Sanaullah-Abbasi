@@ -28,7 +28,7 @@ var checkDead = setInterval(function () {
     window.getComputedStyle(block).getPropertyValue("left")
   );
 
-  if(blockLeft < 150 && blockLeft>0 && characterTop >= 285){
+  if(blockLeft < 180 && blockLeft>0 && characterTop >= 300){
     block.style.animationn = "none";
     block.style.display = "none"
     Swal.fire({
