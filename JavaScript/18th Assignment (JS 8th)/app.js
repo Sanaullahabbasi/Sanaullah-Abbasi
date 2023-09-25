@@ -8,17 +8,7 @@ function jump() {
     character.classList.remove("animate");
   }, 500);
 }
-// function up (){
-//   var get1 = document.getElementById("character")
-//   if (event.keyCode === 38){
-//     character.classList.add("animate");
-//     character.animate.animation = "character 500ms"
-    
-//   }
-//   setTimeout(function () {
-//     character.classList.remove("animate");
-//   }, 500);
-// }
+
 
 var checkDead = setInterval(function () {
   var characterTop = parseInt(
@@ -54,15 +44,21 @@ function abc (){
 console.log(event.keyCode)
 var get = document.getElementById("character")
 if(event.keyCode === 39 && move < 1050){
-  move = move + 5
+  move = move + 10
   character.style.left = move + "px"
   character.style.zIndex = "1px"
   console.log(move)
 }
 if(event.keyCode === 37 && move > 0){
-  move = move - 5
+  move = move - 10
   character.style.left = move + "px"
 }
+  if (event.keyCode === 38){
+    character.classList.add("animate");    
+  }
+  setTimeout(function () {
+    character.classList.remove("animate");
+  }, 600);
 }
 
 window.onkeydown = abc;
