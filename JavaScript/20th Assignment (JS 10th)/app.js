@@ -361,10 +361,10 @@ for (var key in mobile) {
   for (var key1 in mobile[key]) {
     var allData = mobile[key][key1];
     var colorDiv = "";
-    for (var i = 0; i < allData.color.length; i++) {
-      console.log(allData.color.length)
-      allData += `<div style="widht:10px; height: 10px; border-radius: 5px; background-color: ${allData.color[i]}"></div>`;
-    }
+    // for (var i = 0; i < allData.color.length; i++) {
+    //   console.log(allData.color.length)
+    //   allData += `<div style="widht:10px; height: 10px; border-radius: 5px; background-color: ${allData.color[i]}"></div>`;
+    // }
     allMobile.innerHTML += `
     <div  class="col mb-2">
         <div class="card">
