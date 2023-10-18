@@ -361,24 +361,21 @@ for (var key in mobile) {
   for (var key1 in mobile[key]) {
     var allData = mobile[key][key1];
     var colorDiv = "";
-    // for (var i = 0; i < allData.color.length; i++) {
-    //   console.log(allData.color.length)
-    //   allData += `<div style="widht:10px; height: 10px; border-radius: 5px; background-color: ${allData.color[i]}"></div>`;
-    // }
+    for (var i = 0; i < allData.color.length; i++) {
+      colorDiv += `<div class="color d-flex" style=" background-color: ${allData.color[i]}"></div>`;
+     }
     allMobile.innerHTML += `
-    <div  class="col mb-2">
+    <div  class="col mb-2 p-4 ml-2 ">
         <div class="card">
         <img src="${allData.Image}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">${allData.name}</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">${allData.memory}</h6>
             <h2>Rs ${allData.price}</h2> 
-            
-            <div class="color">
-            <div></div>
+            <h5>Colors</h5>
+            <div class="color-main">
+            ${colorDiv}</div>         
             </div>
-            
-          </div>
         </div>
       </div>
     `;
@@ -397,16 +394,20 @@ function onCompanyChange() {
 
 function filterMobiles() {
   var mobileData = mobile[company.value][model.value];
-  allMobile.innerHTML = `
+    allMobile.innerHTML = `
   <div  class="col mb-2">
       <div class="card">
       <img src="${mobileData.Image}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">${mobileData.name}</h5>
           <h6 class="card-subtitle mb-2 text-body-secondary">${mobileData.memory}</h6>
-          <h2>Rs ${mobileData.price}</h2>           
+          <h2>Rs ${mobileData.price}</h2>
+          <h5>Colors</h5>
+          <div class="color-main">
+          ${colorDiv}</div>            
         </div>
       </div>
     </div>
   `;
 }
+
