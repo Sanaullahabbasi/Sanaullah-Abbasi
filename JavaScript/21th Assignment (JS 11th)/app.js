@@ -82,27 +82,7 @@ function countDown (){
 }
 
 timer=setInterval(countDown, 1000)
-for (var i = 0; i < options.length; i++) {
-  if (options[i].checked) {
-    if (options[i].value === questionList[index-1].answer) {
-      score++;
-    }
-  }
-}
-if(!questionList[index]){ var per = (score/questionList.length)*100
-// console.log("Correct Question " + score + " out of " + questionList.length);
-// console.log("Percentage " + Math.round(per) + "%");
-Swal.fire({
-  title: 'Your Result' + "\n" + "Correct Question " + score + " out of " + questionList.length + "\n" +"Percentage " + Math.round(per) + "%",
-  showClass: {
-    popup: 'animate__animated animate__fadeInDown'
-  },
-  hideClass: {
-    popup: 'animate__animated animate__fadeOutUp'
-  }
-})
-return;
-}
+
 question.innerHTML = `
 <p>${questionList[index].question}</p>
 <div class="option-list">
@@ -133,17 +113,30 @@ function renderQuestion (){
   if(!questionList[index]){ var per = (score/questionList.length)*100
   // console.log("Correct Question " + score + " out of " + questionList.length);
   // console.log("Percentage " + Math.round(per) + "%");
-  Swal.fire({
-    title: 'Your Result' + "\n" + "Correct Question " + score + " out of " + questionList.length + "\n" +"Percentage " + Math.round(per) + "%",
-    showClass: {
-      popup: 'animate__animated animate__fadeInDown'
-    },
-    hideClass: {
-      popup: 'animate__animated animate__fadeOutUp'
+  if(per > 60){
+    Swal.fire({
+      title: "Congratulation" + "\n" +   'Your Result' + "\n" + "Correct Question " + score + " out of " + questionList.length + "\n" +"Percentage " + Math.round(per) + "%",
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      }
+    })}
+    else{
+      Swal.fire({
+        title: "Sorry Better Luck for next time" + "\n" +'Your Result' + "\n" + "Correct Question " + score + " out of " + questionList.length + "\n" +"Percentage " + Math.round(per) + "%",
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      })
+      console.log("soory better luck next time")
     }
-  })
-  return;
-}
+    return;
+  }
   question.innerHTML = `
   <p>${questionList[index].question}</p>
   <div class="option-list">
@@ -175,6 +168,7 @@ function renderQuestionPrevious (){
     var per = (score/questionList.length)*100
     // console.log("Correct Question " + score + " out of " + questionList.length);
     // console.log("Percentage " + Math.round(per) + "%");
+    if(per > 60){
     Swal.fire({
       title: 'Your Result' + "\n" + "Correct Question " + score + " out of " + questionList.length + "\n" +"Percentage " + Math.round(per) + "%",
       showClass: {
@@ -183,12 +177,24 @@ function renderQuestionPrevious (){
       hideClass: {
         popup: 'animate__animated animate__fadeOutUp'
       }
-    })
+    })}
+    else{
+      Swal.fire({
+        title: "Sorry Better Luck for next time" + "\n" +'Your Result' + "\n" + "Correct Question " + score + " out of " + questionList.length + "\n" +"Percentage " + Math.round(per) + "%",
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      })
+      console.log("soory better luck next time")
+    }
     return;
   }
-  // if(index > 0){
-    // index--;
-    // }
+  
+
+
     question.innerHTML = `
     <p>${questionList[index].question}</p>
     <div class="option-list">
