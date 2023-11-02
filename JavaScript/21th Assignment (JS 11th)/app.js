@@ -53,7 +53,9 @@ var questionList = [
 var index = 0;
 var score = 0;
 
-function startQuestion(){ var question = document.getElementById("question");
+function startQuestion(){ 
+  
+  var question = document.getElementById("question");
 var options = document.getElementsByName("option");
 index = 0;
 var sec = 59;
@@ -110,7 +112,8 @@ function renderQuestion (){
       }
     }
   }
-  if(!questionList[index]){ var per = (score/questionList.length)*100
+  if(!questionList[index]){ 
+    var per = (score/questionList.length)*100
   // console.log("Correct Question " + score + " out of " + questionList.length);
   // console.log("Percentage " + Math.round(per) + "%");
   if(per > 60){
@@ -255,3 +258,6 @@ function loadFile(event) {
 // }
 
 // timer=setInterval(countDown, 1000)
+
+
+console.log(questionList[0].answer)
