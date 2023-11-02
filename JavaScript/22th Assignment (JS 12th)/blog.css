@@ -1,0 +1,161 @@
+@font-face {
+    font-family: "Fidel";
+    src: url(font/Fidel-Black.ttf);
+  }
+  @font-face {
+    font-family: "Poppins";
+    src: url(font/Poppins-Medium.ttf);
+  }
+  body {
+    position: relative;
+  }
+  .logo {
+    width: 200px;
+    height: 75px;
+  }
+  
+  .navbar {
+    background-color: #05396b !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px !important;
+  }
+  .card {
+    border-radius: 10px;
+    margin: 25px auto;
+  }
+  
+  .blog-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-write {
+    background-color: #f08080;
+    font-size: 36px;
+    font-family: "Fidel";
+    color: #fff;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 190px;
+    border-radius: 17px;
+  }
+  .card-body a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 3px;
+    font-size: 20px;
+  }
+  .card-body a:hover {
+    background-color: #05396b;
+    font-weight: bold;
+  }
+  
+  .blog-text {
+    width: 70%;
+    height: 80vh;
+    background-color: #fff;
+    font-family: "Poppins";
+    font-size: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 15px;
+    padding: 15px;
+    position: relative;
+  }
+  
+  .blog-title > input {
+    border: none;
+    border-bottom: 1px solid #05396b;
+    margin: 10px auto;
+    width: 100%;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  .blog-title > input:focus,
+  .blog-title > input:hover,
+  .blog-title > input:active {
+    outline: none;
+    border-bottom: 2px solid #05396b;
+  }
+  .text-area {
+    width: 100% !important;
+    height: 67vh !important;
+  }
+  .text-area:active,
+  .text-area:hover,
+  .text-area:focus {
+    outline: none;
+    border: none;
+  }
+  #createBlog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .btn-post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  .btnPost {
+    position: absolute;
+    right: 5px;
+    bottom: -45px;
+  }
+  .btn-lout {
+    position: absolute;
+    right: 5px;
+    top: 40px;
+  }
+  .btn-style {
+    color: #fff;
+    background-color: #05396b;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .btn-style:hover {
+    background-color: rgb(219, 230, 221);
+    box-shadow: rgba(3, 246, 52, 0.35) 0px 5px 15px;
+    color: blue;
+  }
+  .btn-style:active {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 87, 17, 0.35) 0px 5px 15px;
+    color: blue;
+    transform: translateY(4px);
+  }
+  
+  .ql-editor,
+  .ql-editor:active,
+  .ql-editor:focus,
+  .ql-editor:hover {
+    height: 55vh;
+  }
+  
+  #files {
+    visibility: hidden;
+    display: none;
+  }
+  
+  .btn-img {
+    color: #fff;
+    background-color: #05396b;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 18px;
+    position: absolute;
+    left: 5px;
+    bottom: -45px;
+    cursor: not-allowed;
+  }
+  
