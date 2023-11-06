@@ -14,6 +14,9 @@ var stopBtn = document.querySelector(".stopbtn");
 var resetBtn = document.querySelector(".resetbtn");
 var getData = document.querySelector(".value-data");
 
+var close = document.querySelector("#close");
+  close.style.display = "none"
+
 function start() {
   getData.style.display = "none";
   startBtn.classList.add("active");
@@ -59,11 +62,21 @@ function reset() {
 
 function fullScreen() {
   document.documentElement.requestFullscreen();
+  var close = document.querySelector("#close");
+  close.style.display = "none"
+}
+
+function closeFullScreen() {
+  document.documentElement.closeFullScreen();
+  console.log(document.documentElement.closeFullScreen());
+  close.style.display = "block"
+  var full = document.querySelector("#full");
+  full.style.display = "none"
 }
 
 function getValue() {
   getData.style.display = "block";
-  getData.style.display = "flex"
+  getData.style.display = "flex";
   getData.innerHTML = `
   <div id="hr">${hour} <span>h</span></div>
   <div id="min">${min} <span>m</span></div>
