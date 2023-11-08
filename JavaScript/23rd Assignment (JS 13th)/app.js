@@ -63,15 +63,17 @@ function reset() {
 function fullScreen() {
   document.documentElement.requestFullscreen();
   var close = document.querySelector("#close");
-  close.style.display = "none"
-}
-
-function closeFullScreen() {
-  document.documentElement.closeFullScreen();
-  console.log(document.documentElement.closeFullScreen());
   close.style.display = "block"
   var full = document.querySelector("#full");
   full.style.display = "none"
+}
+
+function closeFullScreen() {
+  var close = document.querySelector("#close");
+  close.style.display = "none"
+  var full = document.querySelector("#full");
+  full.style.display = "block"
+  document.documentElement.closeFullScreen();
 }
 
 function getValue() {
