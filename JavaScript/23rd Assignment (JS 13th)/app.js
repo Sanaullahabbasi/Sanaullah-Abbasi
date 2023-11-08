@@ -72,8 +72,14 @@ function closeFullScreen() {
   var close = document.querySelector("#close");
   close.style.display = "none"
   var full = document.querySelector("#full");
-  full.style.display = "block"
-  document.documentElement.closeFullScreen();
+  full.style.display = "block";
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) { /* Safari */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE11 */
+    document.msExitFullscreen();
+  }
 }
 
 function getValue() {
