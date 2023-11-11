@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="header">
-      <div class="timer">
+      <div class="timer" onclick="startTimer()">
         TIMER
         <div><img src="images/timerIcon.svg" alt="" /></div>
       </div>
@@ -23,7 +23,7 @@
         <div><img src="images/stopwatchIcon.svg" alt="" /></div>
       </div>
     </div>
-    <div class="main">
+    <div class="main" id="stopUI">
       <div id="hr"></div>
       <div id="min"></div>
       <div id="sec"></div>
@@ -45,7 +45,7 @@
         />
       </div>
     </div>
-    <div class="btn">
+    <div class="btn" id="stopWatchBtn">
       <button class="startbtn" onclick="start()">Start</button>
       <button class="stopbtn" onclick="stop()">Stop</button>
       <button class="resetbtn" onclick="reset()">Reset</button>
@@ -57,5 +57,6 @@
     <div class="value-data" style="display: none"></div>
 
     <script src="app.js"></script>
+    <script src="timer.js"></script>
   </body>
 </html>

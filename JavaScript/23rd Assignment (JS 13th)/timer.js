@@ -4,6 +4,7 @@ var min = document.getElementById("min");
 var timer;
 
 function startTimer() {
+
   var getValue = timerValue.value;
   var minValue = parseInt(getValue.slice(0, 1));
   var secValue = parseInt(getValue.slice(1, 3));
