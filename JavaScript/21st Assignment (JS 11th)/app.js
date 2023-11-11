@@ -25,7 +25,8 @@ var questionList = [
     answer: 2,
   },
   {
-    question: "Q-4 What is the difference between an opening tag and a closing tag?",
+    question:
+      "Q-4 What is the difference between an opening tag and a closing tag?",
     option1: "Opening tag has a / in front",
     option2: "There is no difference",
     option3: "closing tag has a / in front",
@@ -53,39 +54,37 @@ var questionList = [
 var index = 0;
 var score = 0;
 
-function startQuestion(){ 
-  
+function startQuestion() {
   var question = document.getElementById("question");
-var options = document.getElementsByName("option");
-index = 0;
-var sec = 59;
-var min = 3;
-var timer;
-var remainingTime = document.getElementById('remainingTime')
+  var options = document.getElementsByName("option");
+  index = 0;
+  var sec = 59;
+  var min = 3;
+  var timer;
+  var remainingTime = document.getElementById("remainingTime");
 
-function countDown (){
-        if(sec < 1){
-        sec = 59;
-        min--
+  function countDown() {
+    if (sec < 1) {
+      sec = 59;
+      min--;
+    } else {
+      sec--;
     }
-    else{
-        sec--;
-    }
-    
-    if(min < 1 && sec < 1){
-        clearInterval(timer)
-        return
+
+    if (min < 1 && sec < 1) {
+      clearInterval(timer);
+      return;
     }
     remainingTime.innerHTML = `
     <div><h6>Time Remining</h6> 
     <p> ${min} : ${sec}</p></div>
   </div>
-    `
-}
+    `;
+  }
 
-timer=setInterval(countDown, 1000)
+  timer = setInterval(countDown, 1000);
 
-question.innerHTML = `
+  question.innerHTML = `
 <p>${questionList[index].question}</p>
 <div class="option-list">
   <label><input type="radio" name="option" value="${questionList[index].option1}" /> ${questionList[index].option1}</label
@@ -97,46 +96,69 @@ question.innerHTML = `
   <label><input type="radio" name="option" value="${questionList[index].option4}" /> ${questionList[index].option4}</label>
 </div>
   `;
-index++;
-  
+  index++;
 }
 
 // console.log("start: " +  index)
-function renderQuestion (){
+function renderQuestion() {
   var question = document.getElementById("question");
   var options = document.getElementsByName("option");
   for (var i = 0; i < options.length; i++) {
     if (options[i].checked) {
-      if (options[i].value === questionList[index-1].answer) {
+      if (options[i].value === questionList[index - 1].answer) {
         score++;
       }
     }
   }
-  if(!questionList[index]){ 
-    var per = (score/questionList.length)*100
-  // console.log("Correct Question " + score + " out of " + questionList.length);
-  // console.log("Percentage " + Math.round(per) + "%");
-  if(per > 60){
-    Swal.fire({
-      title: "Congratulation" + "\n" +   'Your Result' + "\n" + "Correct Question " + score + " out of " + questionList.length + "\n" +"Percentage " + Math.round(per) + "%",
-      showClass: {
-        popup: 'animate__animated animate__fadeInDown'
-      },
-      hideClass: {
-        popup: 'animate__animated animate__fadeOutUp'
-      }
-    })}
-    else{
+  if (!questionList[index]) {
+    var per = (score / questionList.length) * 100;
+    // console.log("Correct Question " + score + " out of " + questionList.length);
+    // console.log("Percentage " + Math.round(per) + "%");
+    if (per > 60) {
       Swal.fire({
-        title: "Sorry Better Luck for next time" + "\n" +'Your Result' + "\n" + "Correct Question " + score + " out of " + questionList.length + "\n" +"Percentage " + Math.round(per) + "%",
+        title:
+          "Congratulation" +
+          "\n" +
+          "Your Result" +
+          "\n" +
+          "Correct Question " +
+          score +
+          " out of " +
+          questionList.length +
+          "\n" +
+          "Percentage " +
+          Math.round(per) +
+          "%",
         showClass: {
-          popup: 'animate__animated animate__fadeInDown'
+          popup: "animate__animated animate__fadeInDown",
         },
         hideClass: {
-          popup: 'animate__animated animate__fadeOutUp'
-        }
-      })
-      console.log("soory better luck next time")
+          popup: "animate__animated animate__fadeOutUp",
+        },
+      });
+    } else {
+      Swal.fire({
+        title:
+          "Sorry Better Luck for next time" +
+          "\n" +
+          "Your Result" +
+          "\n" +
+          "Correct Question " +
+          score +
+          " out of " +
+          questionList.length +
+          "\n" +
+          "Percentage " +
+          Math.round(per) +
+          "%",
+        showClass: {
+          popup: "animate__animated animate__fadeInDown",
+        },
+        hideClass: {
+          popup: "animate__animated animate__fadeOutUp",
+        },
+      });
+      console.log("soory better luck next time");
     }
     return;
   }
@@ -156,7 +178,7 @@ function renderQuestion (){
   // console.log("next: " +  index)
 }
 
-function renderQuestionPrevious (){
+function renderQuestionPrevious() {
   var question = document.getElementById("question");
   var options = document.getElementsByName("option");
   index--;
@@ -167,38 +189,58 @@ function renderQuestionPrevious (){
   //     }
   //   }
   // }
-  if(!questionList[index]){
-    var per = (score/questionList.length)*100
+  if (!questionList[index]) {
+    var per = (score / questionList.length) * 100;
     // console.log("Correct Question " + score + " out of " + questionList.length);
     // console.log("Percentage " + Math.round(per) + "%");
-    if(per > 60){
-    Swal.fire({
-      title: 'Your Result' + "\n" + "Correct Question " + score + " out of " + questionList.length + "\n" +"Percentage " + Math.round(per) + "%",
-      showClass: {
-        popup: 'animate__animated animate__fadeInDown'
-      },
-      hideClass: {
-        popup: 'animate__animated animate__fadeOutUp'
-      }
-    })}
-    else{
+    if (per > 60) {
       Swal.fire({
-        title: "Sorry Better Luck for next time" + "\n" +'Your Result' + "\n" + "Correct Question " + score + " out of " + questionList.length + "\n" +"Percentage " + Math.round(per) + "%",
+        title:
+          "Your Result" +
+          "\n" +
+          "Correct Question " +
+          score +
+          " out of " +
+          questionList.length +
+          "\n" +
+          "Percentage " +
+          Math.round(per) +
+          "%",
         showClass: {
-          popup: 'animate__animated animate__fadeInDown'
+          popup: "animate__animated animate__fadeInDown",
         },
         hideClass: {
-          popup: 'animate__animated animate__fadeOutUp'
-        }
-      })
-      console.log("soory better luck next time")
+          popup: "animate__animated animate__fadeOutUp",
+        },
+      });
+    } else {
+      Swal.fire({
+        title:
+          "Sorry Better Luck for next time" +
+          "\n" +
+          "Your Result" +
+          "\n" +
+          "Correct Question " +
+          score +
+          " out of " +
+          questionList.length +
+          "\n" +
+          "Percentage " +
+          Math.round(per) +
+          "%",
+        showClass: {
+          popup: "animate__animated animate__fadeInDown",
+        },
+        hideClass: {
+          popup: "animate__animated animate__fadeOutUp",
+        },
+      });
+      console.log("soory better luck next time");
     }
     return;
   }
-  
 
-
-    question.innerHTML = `
+  question.innerHTML = `
     <p>${questionList[index].question}</p>
     <div class="option-list">
     <label><input type="radio" name="option" value="${questionList[index].option1}" /> ${questionList[index].option1}</label
@@ -210,12 +252,8 @@ function renderQuestionPrevious (){
     <label><input type="radio" name="option" value="${questionList[index].option4}" /> ${questionList[index].option4}</label>
     </div>
     `;
-    // console.log("previous: " +  index)
-
+  // console.log("previous: " +  index)
 }
-
-
-
 
 // <<<<<< User upload a picture >>>>>>
 
@@ -223,12 +261,11 @@ function loadFile(event) {
   var image = document.getElementById("userImage");
   var userPicture = document.getElementById("userPicture");
   var file = event.target.files[0];
-  console.log(file)
+  console.log(file);
   if (file) {
     image.src = URL.createObjectURL(file);
   }
 }
-
 
 // <<<< Timer contdown >>>>
 
@@ -245,13 +282,13 @@ function loadFile(event) {
 //     else{
 //         sec--;
 //     }
-    
+
 //     if(min < 1 && sec < 1){
 //         clearInterval(timer)
 //         return
 //     }
 //     remainingTime.innerHTML = `
-//     <div><h6>Time Remining</h6> 
+//     <div><h6>Time Remining</h6>
 //     <p> ${min} : ${sec}</p></div>
 //   </div>
 //     `
@@ -259,5 +296,4 @@ function loadFile(event) {
 
 // timer=setInterval(countDown, 1000)
 
-
-console.log(questionList[0].answer)
+console.log(questionList[0].answer);
