@@ -27,7 +27,7 @@ body {
   font-weight: bold;
   font-family: "Lobster";
   position: relative;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .main div {
   padding: 10px;
@@ -67,7 +67,7 @@ body {
   border-radius: 5px;
   padding: 5px 10px;
 }
-.getValues{
+.getValues {
   cursor: pointer;
   background-color: rgb(255, 255, 255);
   color: rgb(3, 80, 25);
@@ -108,8 +108,8 @@ body {
   right: 5px;
   bottom: -10px;
 }
-#icon img{
-    cursor: pointer;
+#icon img {
+  cursor: pointer;
 }
 .header {
   display: flex;
@@ -119,47 +119,57 @@ body {
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
   font-weight: bold;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 10px;
 }
 .header > div {
-  margin: 20px 50px;
+  margin: 11px 0px;
+  padding: 1px 74px;
 }
-.timer{
-    position: relative;
+.timer {
+  position: relative;
 }
-.timer img{
-    position: absolute;
-    left: -40px;
-    top: 0px;
+.timer img {
+  position: absolute;
+  left: 37px;
+  top: 4px;
 }
-.stopwatch{
-    position: relative;
+.stopwatch {
+  position: relative;
 }
 .stopwatch img {
-    position: absolute;
-    left: -40px;
-    top: 0px;
+  position: absolute;
+  left: 29px;
+  top: 5px;
 }
 
-.value-data{
+.value-data {
   width: 400px;
   height: 200px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   background-color: #fff;
   border-radius: 10px;
-  display: flex ;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-#timer_value{
+#timer_value {
   font-family: "Lobster";
-  font-size: 28px;
+  font-size: 46px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
   background-color: transparent;
+  position: absolute;
+  top: 92px;
+  left: 214px;
 }
-#timer_value:hover, #timer_value:focus, #timer_value:active{
+#timer_value:hover,
+#timer_value:focus,
+#timer_value:active {
   border: none;
   outline: none;
 }
@@ -168,19 +178,8 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.sec_blue{
+.sec_blue {
   color: navy;
   font-size: 30px;
   margin-left: 10px;
-}
-#timer{
-  position: relative;
-}
-.btn-p{
-  position: absolute;
-bottom: 0px;
-}
-
-.icon-p{
-  position: absolute;
 }
