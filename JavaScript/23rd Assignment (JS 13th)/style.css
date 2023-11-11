@@ -150,3 +150,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+#timer_value{
+  font-family: "Lobster";
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
