@@ -157,4 +157,30 @@ body {
   align-items: center;
   justify-content: center;
   border: none;
+  background-color: transparent;
+}
+#timer_value:hover, #timer_value:focus, #timer_value:active{
+  border: none;
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.sec_blue{
+  color: navy;
+  font-size: 30px;
+  margin-left: 10px;
+}
+#timer{
+  position: relative;
+}
+.btn-p{
+  position: absolute;
+bottom: 0px;
+}
+
+.icon-p{
+  position: absolute;
 }
