@@ -22,9 +22,8 @@ function start() {
     } else if (timerValue.value.length === 3) {
       // var minV = timerValue.value;
       // var secV = timerValue.value;
-      minValue = getValue.slice(0, 1);
-      secValue = getValue.slice(1, 3);
-
+      minValue = parseInt(getValue.slice(0, 1));
+      secValue = parseInt(getValue.slice(1, 3));
       if (secValue < 1) {
         secValue = 59;
         minValue--;
