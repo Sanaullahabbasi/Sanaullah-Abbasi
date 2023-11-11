@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="timer" class="main">
+        <input type="text" name="" id="timer_value">
+      <div id="hr"></div>
+      <div id="min"></div>
+      <div id="sec">00</div>
+      <!-- <div id="mil">00</div> -->
+      <!-- <div id="icon">
+        <img
+          id="full"
+          title="fullScreen"
+          src="images/icon.png"
+          onclick="fullScreen()"
+          alt=""
+        />
+        <img
+          id="close"
+          title="closeFullScreen"
+          src="images/closedIcon.png"
+          onclick="closeFullScreen()"
+          alt=""
+        />
+      </div> -->
+
+      <div class="btn">
+        <button class="startbtn" onclick="start()">Start</button>
+        <button class="resetbtn" onclick="reset()">Reset</button>
+      </div>
+    </div>
+
+    <script src="timer.js"></script>
+  </body>
+</html>
