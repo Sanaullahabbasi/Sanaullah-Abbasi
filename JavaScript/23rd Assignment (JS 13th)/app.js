@@ -98,17 +98,25 @@ function reset() {
 
 // ====***** Window FullScreen JS *****=======
 
+var body = document.body
+
 function fullScreen() {
   document.documentElement.requestFullscreen();
   var close = document.querySelector("#close");
   close.style.display = "block";
   var full = document.querySelector("#full");
   full.style.display = "none";
+  body.style.display = "flex";
+  body.style.justifyContent= "center";
+  body.style.alignItems= "center";
 }
 
 // ====***** Window close FullScreen JS *****=======
 
 function closeFullScreen() {
+  // body.style.display = "flex";
+  body.style.justifyContent= "center";
+  // body.style.alignItems= "center";
   var close = document.querySelector("#close");
   close.style.display = "none";
   var full = document.querySelector("#full");
