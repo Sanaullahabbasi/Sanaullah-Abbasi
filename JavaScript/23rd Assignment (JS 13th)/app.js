@@ -144,13 +144,15 @@ function timer(){
   getMilisec.style.display="none";
   getSeconds.classList.add("sec_blue");
   startBtn.addEventListener("click", startTimer);
+  stopBtn.addEventListener("click", stopTimer);
   resetBtn.addEventListener("click", resetTimer);
 }
 
 // ====***** Timer Start Button JS *****=======
 
 function startTimer() {
-
+  startBtn.style.display = "none";
+  stopBtn.style.display = "block";
   var getValue = timerValue.value;
   var minValue = parseInt(getValue.slice(0, 1));
   var secValue = parseInt(getValue.slice(1, 3));
@@ -203,6 +205,14 @@ function startTimer() {
   }
 
   timer = setInterval(countDown, 1000);
+}
+
+// ====***** Timer Stop Button JS *****=======
+
+function stopTimer() {
+  clearInterval(timer);
+  startBtn.style.display = "block";
+  stopBtn.style.display = "none";
 }
 
 // ====***** Timer Reset Button JS *****=======
