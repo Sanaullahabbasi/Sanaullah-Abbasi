@@ -161,9 +161,9 @@ function startTimer() {
     if (timerValue.value.length <= 2) {
       getValue--;
       getSeconds.innerHTML = getValue + `<span>s</span>`;
-      if (getValue < 1) {
-        // getSeconds.innerHTML = `<h1>Time Out</h1>`;
-      }
+      // if (getValue < 1) {
+      //   getSeconds.innerHTML = `<h1>Time Out</h1>`;
+      // }
     } else if (timerValue.value.length === 3) {
       getMinutes.style.display="block";
       getSeconds.style.display="block";
@@ -178,6 +178,7 @@ function startTimer() {
       getMinutes.innerHTML = minValue + `<span>m</span>`;
       if (minValue < 1 && secValue < 1) {
         // getSeconds.innerHTML = `<h1>Time Out</h1>`;
+        getSeconds.innerHTML = ``;
         clearInterval(timer);
         getMinutes.innerHTML = ``;
       }
@@ -192,6 +193,7 @@ function startTimer() {
       }
       if (minV < 1 && secV < 1) {
         // getSeconds.innerHTML = `<h1>Time Out</h1>`;
+        getSeconds.innerHTML = ``;
         clearInterval(timer);
         getMinutes.innerHTML = ``;
       }
