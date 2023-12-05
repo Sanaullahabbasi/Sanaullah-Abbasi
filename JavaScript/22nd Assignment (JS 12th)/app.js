@@ -46,7 +46,7 @@ function formRegister() {
       showConfirmButton: false,
       timer: 2000,
     });
-    
+
     var obj = {
       name: name.value,
       email: email.value,
@@ -54,16 +54,15 @@ function formRegister() {
       password: password.value,
       confirmPassword: confirmPassword.value,
     };
-    
-      userData.push(obj);
-console.log(userData)
- 
+
+    userData.push(obj);
+    console.log(userData);
+
     localStorage.setItem("userData", JSON.stringify(userData));
     setTimeout(() => {
       window.location.href = "./blog.html";
     }, 2000);
   }
-  
 }
 function checkPassword() {
   var password = document.getElementById("password");

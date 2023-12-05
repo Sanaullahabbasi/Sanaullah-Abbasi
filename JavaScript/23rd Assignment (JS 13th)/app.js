@@ -233,3 +233,11 @@ function resetTimer() {
   getMinutes.innerHTML = ``;
 }
 
+//  =====***** Clear function *****=======
+
+function clearTimer(){
+  clearInterval(timer);
+}
+function clearStopwatch(){
+  clearInterval(interval);
+}
