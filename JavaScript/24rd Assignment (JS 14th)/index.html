@@ -3,56 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stopwatch with Timer</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Bootsrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Animate style link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- manifest link -->
+    <link rel="manifest" href="manifest.json">
+    <!-- service worker installer -->
+    <!-- <script>
+      //if browser support service worker
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js");
+      }
+    </script> -->
+    
   </head>
+
   <body>
-    <div id="main">
-      <div id="header">
-        <button id="timer" onclick="timer()">
-          Timer
-          <img src="images/timerIcon.svg" alt="" />
-        </button>
-
-        <button id="Stopwatch" onclick="stopwatch()">
-          Stopwatch
-          <img src="images/stopwatchIcon.svg" alt="" />
-        </button>
-      </div>
-      <div id="textBody">
-        <div id="hr"  style="display: none;"></div>
-        <div id="min" style="display: none;"></div>
-        <div id="sec"  class="sec_blue" style="display: none;"></div>
-        <div id="mil" style="display: none;"></div>
-
-        <div class="input_field" style="display: none;">
-          <input type="number" name="" id="timer_value" placeholder="00m 00s" maxlength="" />
+    <div
+      id="container"
+      class="d-flex flex-column justify-content-center align-items-center"
+    >
+      <div id="header" class="d-flex justify-content-center align-items-center">
+        <div>
+          <input type="search" name="" id="input" placeholder="search city" />
+         <i class="fa-brands fa-searchengin"></i>
         </div>
-      
       </div>
-      <div id="btn_sec">
-        <button id="start" >Start</button>
-        <button id="stop"  style="display: none;">Stop</button>
-        <button id="reset" >Reset</button>
-        <div id="icon">
-            <img
-              id="full"
-              title="fullScreen"
-              src="images/icon.png"
-              onclick="fullScreen()"
-              alt=""
-            />
-            <img
-              id="close"
-              title="closeFullScreen"
-              src="images/closedIcon.png"
-              onclick="closeFullScreen()"
-              alt="" style="display: none;"
-            />
+      <div id="info-sec">
+        <div>
+        <div id="temp" class="d-flex align-items-center">
+          <h5>Temperature</h5>
+          <img src="assests/images/hot.png" class="set" alt="">
+        </div>
+        <div id="humidity" class="d-flex align-items-center">
+          <h5>Humidity</h5>
+          <img src="assests/images/humidity.png" class="set" alt="">
+        </div>
+        <div id="wind" class="d-flex align-items-center">
+          <h5>Wind</h5>
+          <img src="assests/images/wind.png" class="set" alt="">
+        </div>
+        <div id="Feel_like" class="d-flex align-items-center">
+          <h5>Feel Like</h5>
+          <img src="assests/images/feel_like.png" class="set" alt="">
+        </div>
+        <div id="visibility" class="d-flex align-items-center">
+          <h5>Visibility</h5>
+          <img src="assests/images/visibility.png" class="set" alt="">
+        </div>
+      </div>
+        <div id="info">
+          <div id="Weather_icon">
+           
           </div>
+          <div id="info_temp">
+          </div>
+          <div id="info_loc">
+          </div>
+        </div>
       </div>
     </div>
 
+
+<!-- Sweet Alert Script -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <!-- Main Java Script file -->
     <script src="app.js"></script>
   </body>
 </html>
