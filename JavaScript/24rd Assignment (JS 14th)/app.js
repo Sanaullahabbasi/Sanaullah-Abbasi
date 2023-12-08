@@ -1,243 +1,83 @@
-// ====***** Stopwatch JS *****=======
+document.querySelector(".fa-searchengin").addEventListener("click", () => {
+  let input = document.getElementById("input");
+  const weatherAPI = `https://api.openweathermap.org/data/2.5/weather?&appid=0ae49f1a5bcf107f8c42a6f4d510f21e&units=metric&q=${input.value}`;
+  if (input.value.trim() === "") {
+    Swal.fire({
+        title: `Please enter a city name`,
+        showClass: {
+          popup: `
+            animate__animated
+            animate__fadeInUp
+            animate__faster
+          `,
+        },
+        hideClass: {
+          popup: `
+            animate__animated
+            animate__fadeOutDown
+            animate__faster
+          `,
+        },
+      });
+  } else {
+    let weatherData = new Promise((resolve, reject) => {
+      fetch(weatherAPI)
+        .then((res) => res.json())
+        .then((data) => resolve(data))
+        .catch((err) => reject(err));
+    });
+    weatherData
+    .then((data) => {
+      document.getElementById("temp").innerHTML = `<h5>Temperature</h5><img src="assests/images/hot.png" class="set" alt=""> <h2> ${Math.round(data.main.temp)} °C </h2>`;
+      document.getElementById("humidity").innerHTML = `<h5>Humidity</h5><img src="assests/images/humidity.png" class="set" alt=""><h2> ${Math.round(data.main.humidity)}</h2>`;
+      document.getElementById("wind").innerHTML = `<h5>Wind</h5><img src="assests/images/wind.png" class="set" alt=""><h2> ${Math.round(data.wind.speed)}</h2>`;
+      document.getElementById("Feel_like").innerHTML = `<h5>Feel Like</h5><img src="assests/images/feel_like.png" class="set" alt=""><h2> ${Math.round(data.main.feels_like)} °C </h2>`;
+      document.getElementById("visibility").innerHTML = `<h5>Visibility</h5><img src="assests/images/visibility.png" class="set" alt=""><h2> ${Math.round(data.visibility) / 1000} km</h2>`;
+      document.getElementById("info_temp").innerHTML = `<h1>${Math.round(data.main.temp)} °C</h1>`;
+      document.getElementById("info_loc").innerHTML = `<h4>${input.value}</h4>`;
+      console.log(data);
+      if(data.weather[0].main = "Clouds"){
+        document.getElementById("Weather_icon").innerHTML = ` <img width="170px" src="assests/images/clouds.png" alt="Clouds"><div>${data.weather[0].main}</div>`
+      }else if(data.weather[0].main === "Clear"){
+        document.getElementById("Weather_icon").innerHTML = ` <img width="170px" src="assests/images/clear.png" alt="Clear"><div>${data.weather[0].main}</div>`
+      }else if(data.weather[0].main === "Storm"){
+        document.getElementById("Weather_icon").innerHTML = ` <img width="170px" src="assests/images/storm.png" alt="Storm"><div>${data.weather[0].main}</div>`
+      }else if(data.weather[0].main === "Snow"){
+        document.getElementById("Weather_icon").innerHTML = ` <img width="170px" src="assests/images/snow.png" alt="Snow"><div>${data.weather[0].main}</div>`
+      }else{
+        document.getElementById("Weather_icon").innerHTML = ` <img width="170px" src="assests/images/weatherIcon.png" alt="weatherIcon"><div>${data.weather[0].main}</div>`
 
-var hour = 0;
-var min = 0;
-var sec = 0;
-var milisec = 0;
-
-var getHours = document.getElementById("hr");
-var getMinutes = document.getElementById("min");
-var getSeconds = document.getElementById("sec");
-var getMilisec = document.getElementById("mil");
-var texBody = document.getElementById("textBody");
-var interval;
-
-var startBtn = document.querySelector("#start");
-var stopBtn = document.querySelector("#stop");
-var resetBtn = document.querySelector("#reset");
-var stopWatchUI = document.getElementById("Stopwatch");
-var timerUI = document.getElementById("timer");
-var inputField = document.querySelector(".input_field");
-
-
-
-var close = document.querySelector("#close");
-close.style.display = "none";
-stopBtn.style.display = "none";
-// texBody.style.visibility="hidden";
-
-
-function stopwatch() {
-  stopWatchUI.style.borderBottom = "2px solid #1a73e8";
-  stopWatchUI.style.color = "#1a73e8";
-  timerUI.style.borderBottom= "none";
-  timerUI.style.color = "black";
-  startBtn.style.display="block"; 
-  stopBtn.style.display="none"; 
-  resetBtn.style.display="block"; 
-  texBody.style.visibility="visible";
-  inputField.style.display="none";
-  getHours.style.display="block";
-  getMinutes.style.display="block";
-  getSeconds.style.display="block";
-  getMilisec.style.display="block";
-  startBtn.addEventListener("click", start);
-  stopBtn.addEventListener("click", stop);
-  resetBtn.addEventListener("click", reset);
-}
-
-// ====***** Stopwatch Start Button JS *****=======
-
-function start() {
-  startBtn.style.display = "none";
-  stopBtn.style.display = "block";
-  getMilisec.innerHTML = `00
-  `
-  getSeconds.classList.remove("sec_blue")
-  interval = setInterval(function () {
-    milisec++;
-    getMilisec.innerHTML = milisec;
-    if (milisec >= 100) {
-      sec++;
-      getSeconds.innerHTML = sec + `<span>s</span>`;
-      milisec = 0;
-    } else if (sec >= 60) {
-      min++;
-      getMinutes.innerHTML = min + `<span>m</span>`;
-      sec = 0;
-    } else if (min >= 60) {
-      hour++;
-      getHours.innerHTML = hour + `<span>h</span>`;
-      min = 0;
+      }
+    })
+    .catch((err)=>{
+    if(err){
+        Swal.fire({
+            title: `Please enter a valid city name`,
+            showClass: {
+              popup: `
+                animate__animated
+                animate__fadeInUp
+                animate__faster
+              `,
+            },
+            hideClass: {
+              popup: `
+                animate__animated
+                animate__fadeOutDown
+                animate__faster
+              `,
+            },
+          });
     }
-  }, 10);
+    })
 }
-// ====***** Stopwatch Stop Button JS *****=======
+});
 
-function stop() {
-  clearInterval(interval);
-  startBtn.style.display = "block";
-  stopBtn.style.display = "none";
-}
-
-// ====***** Stopwatch Reset Button JS *****=======
-
-
-function reset() {
-  clearInterval(interval);
-  hour = 0;
-  min = 0;
-  sec = 0;
-  milisec = 0;
-  getHours.innerHTML = "";
-  getMinutes.innerHTML = "";
-  getSeconds.innerHTML = "";
-  getMilisec.innerHTML = milisec + "0";
-}
-
-
-// ====***** Window FullScreen JS *****=======
-
-var body = document.body
-
-function fullScreen() {
-  document.documentElement.requestFullscreen();
-  var close = document.querySelector("#close");
-  close.style.display = "block";
-  var full = document.querySelector("#full");
-  full.style.display = "none";
-  body.style.display = "flex";
-  body.style.justifyContent= "center";
-  body.style.alignItems= "center";
-}
-
-// ====***** Window close FullScreen JS *****=======
-
-function closeFullScreen() {
-  // body.style.display = "flex";
-  body.style.justifyContent= "center";
-  // body.style.alignItems= "center";
-  var close = document.querySelector("#close");
-  close.style.display = "none";
-  var full = document.querySelector("#full");
-  full.style.display = "block";
-  if (document.exitFullscreen) {
-    document.exitFullscreen();
-  } else if (document.webkitExitFullscreen) {
-    /* Safari */
-    document.webkitExitFullscreen();
-  } else if (document.msExitFullscreen) {
-    /* IE11 */
-    document.msExitFullscreen();
-  }
-}
-
-
-// ====***** Timer JS *****=======
-
-var timer;
-var timerValue = document.getElementById("timer_value");
-
-
-
-function timer(){
-  timerUI.style.borderBottom= "2px solid #1a73e8";
-  timerUI.style.color = "#1a73e8";
-  stopWatchUI.style.borderBottom = "none";
-  stopWatchUI.style.color = "black";
-  inputField.style.display="block";
-  getHours.style.display="none";
-  getMinutes.style.display="none";
-  getSeconds.style.display="block";
-  getMilisec.style.display="none";
-  getSeconds.classList.add("sec_blue");
-  startBtn.addEventListener("click", startTimer);
-  stopBtn.addEventListener("click", stopTimer);
-  resetBtn.addEventListener("click", resetTimer);
-}
-
-// ====***** Timer Start Button JS *****=======
-
-function startTimer() {
-  startBtn.style.display = "none";
-  stopBtn.style.display = "block";
-  var getValue = timerValue.value;
-  var minValue = parseInt(getValue.slice(0, 1));
-  var secValue = parseInt(getValue.slice(1, 3));
-  var minV = parseInt(getValue.slice(0, 2));
-  var secV = parseInt(getValue.slice(2, 4));
-  timerValue.style.display = "none";
-  function countDown() {
-    if (timerValue.value.length <= 2) {
-      getValue--;
-      getSeconds.innerHTML = getValue + `<span>s</span>`;
-      // if (getValue < 1) {
-      //   getSeconds.innerHTML = `<h1>Time Out</h1>`;
-      // }
-    } else if (timerValue.value.length === 3) {
-      getMinutes.style.display="block";
-      getSeconds.style.display="block";
-      if (secValue < 1) {
-        secValue = 59;
-        minValue--;
-        } else {
-        secValue--;
-      }
-
-      getSeconds.innerHTML = secValue + `<span>s</span>`;
-      getMinutes.innerHTML = minValue + `<span>m</span>`;
-      if (minValue < 1 && secValue < 1) {
-        // getSeconds.innerHTML = `<h1>Time Out</h1>`;
-        getSeconds.innerHTML = ``;
-        clearInterval(timer);
-        getMinutes.innerHTML = ``;
-      }
-    } else if (timerValue.value.length === 4) {
-      getMinutes.style.display="block";
-      getSeconds.style.display="block";
-      if (secV < 1) {
-        secV = 59;
-        minV--;
-      } else  {
-        secV--;
-      }
-      if (minV < 1 && secV < 1) {
-        // getSeconds.innerHTML = `<h1>Time Out</h1>`;
-        getSeconds.innerHTML = ``;
-        clearInterval(timer);
-        getMinutes.innerHTML = ``;
-      }
-      getSeconds.innerHTML = secV + `<span>s</span>`;
-      getMinutes.innerHTML = minV + `<span>m</span>`;
-    }
-  }
-
-  timer = setInterval(countDown, 1000);
-}
-
-// ====***** Timer Stop Button JS *****=======
-
-function stopTimer() {
-  clearInterval(timer);
-  startBtn.style.display = "block";
-  stopBtn.style.display = "none";
-}
-
-// ====***** Timer Reset Button JS *****=======
-
-function resetTimer() {
-  clearInterval(timer);
-  timerValue.style.display = "block";
-  timerValue.value = "";
-  getSeconds.innerHTML = ``;
-  getMinutes.innerHTML = ``;
-}
-
-//  =====***** Clear function *****=======
-
-function clearTimer(){
-  clearInterval(timer);
-}
-function clearStopwatch(){
-  clearInterval(interval);
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function() {
+    navigator.serviceWorker
+      .register("/sw.js")
+      .then(res => console.log("service worker registered"))
+      .catch(err => console.log("service worker not registered", err))
+  })
 }

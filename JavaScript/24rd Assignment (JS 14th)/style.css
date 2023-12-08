@@ -1,147 +1,175 @@
 @font-face {
-  font-family: "Lobster";
-  src: url(font/Lobster-Regular.ttf);
+  font-family: "Poppins";
+  src: url(assests/fonts/Poppins-Medium.ttf);
 }
 @font-face {
-  font-family: "Poppins";
-  src: url(font/Poppins-Medium.ttf);
+  font-family: "BlackOpsOne";
+  src: url(assests/fonts/BlackOpsOne-Regular.ttf);
 }
+* {
+  font-family: "Poppins";
+}
+
 body {
   width: 100%;
   height: 100vh;
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin: 20px;
 }
 
-#main {
-  width: 60%;
-  height: 290px;
-  border: 1px solid rgb(207, 206, 206);
+#container {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  width: 700px;
+  height: 70vh;
   border-radius: 10px;
 }
 #header {
   width: 100%;
-  height: 60px;
-  background-color: transparent;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-#textBody {
+#info-sec {
   width: 100%;
-  height: 170px;
-  border-top: 1px solid rgb(207, 206, 206);
-  border-bottom: 1px solid rgb(207, 206, 206);
+  height: 100%;
+  padding: 10px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#info {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
-#btn_sec {
+#info-sec > div:first-child {
   width: 100%;
-  height: 40px;
-  background-color: transparent;
+  height: 100%;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  padding: 9px;
-}
-#btn_sec > button {
-  margin-left: 10px;
-  cursor: pointer;
-}
-#header > button {
-  background-color: transparent;
-  outline: none;
-  border: none;
-  font-size: 20px;
-  font-weight: 600;
-  cursor: pointer;
-}
-#start,
-#stop {
-  background-color: #1a73e8;
-  border: 1px solid #fdfeff;
-  color: #fff;
-  font-size: 14px;
-  padding: 9px 15px;
-  border-radius: 3px;
-}
-#reset {
-  background-color: #fff;
-  border: 1px solid #1a73e8;
-  color: #1a73e8;
-  font-size: 14px;
-  padding: 9px 15px;
-  border-radius: 3px;
-}
-#timer {
-  position: relative;
-  padding: 11px 91px 11px 10px;
-}
-#timer > img {
-  position: absolute;
-  width: 25px;
-  height: 35px;
-  left: -19px;
-  top: 3px;
-}
-#Stopwatch {
-  position: relative;
-  padding: 11px 47px 11px 10px;
-}
-#Stopwatch > img {
-  position: absolute;
-  width: 25px;
-  height: 35px;
-  left: -29px;
-  top: 4px;
-}
-#hr,
-#min,
-#sec {
-  margin-left: 20px;
-  font-size: 40px;
-}
-#icon {
-  position: absolute;
-  right: 25px;
-  bottom: 5px;
-}
-#icon img {
-  cursor: pointer;
-  width: 35px;
-}
-#mil {
-  color: navy;
-  font-size: 30px;
-  margin-left: 10px;
-}
-.sec_blue {
-  color: navy;
-  font-size: 30px;
-  margin-left: 10px;
-}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-#timer_value:hover,
-#timer_value:focus,
-#timer_value:active {
-  border: none;
-  outline: none;
-}
-#timer_value {
-  font-family: "Poppins";
-  font-size: 46px;
-  display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  border: none;
-  background-color: transparent;
-  text-align: center;
+  /* position: relative; */
+  padding-left: 20px;
   padding-right: 40px;
+}
+
+#input {
+  width: 500px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid black;
+  color: blue;
+  font-size: 30px;
+  position: relative;
+  outline: none;
+}
+::placeholder {
+  color: blue;
+  opacity: 0.8; /* Firefox */
+  font-size: 20px;
+}
+
+::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: blue;
+}
+.fa-searchengin,
+.fa-temperature-three-quarters {
+  color: blue;
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.fa-xmark {
+  color: blue;
+  font-size: 20px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+#temp,
+#humidity,
+#wind,
+#Feel_like,
+#visibility {
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 1px solid blue;
+  position: relative;
+}
+#temp > h2,
+#humidity > h2,
+#wind > h2,
+#Feel_like > h2,
+#visibility > h2 {
+  position: absolute;
+  right: 5%;
+  font-family: "BlackOpsOne";
+  font-style: italic;
+}
+/* adujsting the icons of weather information */
+.set {
+  position: absolute;
+  right: 40%;
+  height: 40px;
+  top: -11px;
+}
+#info_temp > h1 {
+  bottom: 60px;
+  right: 30%;
+  font-size: 54px;
+  margin-top: 20%;
+}
+#info_loc > h4 {
+  bottom: 10px;
+  right: 25%;
+  font-size: 32px;
+  text-align: center;
+}
+#Weather_icon > img {
+  margin-top: 20px;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+#Weather_icon div {
+  text-align: center;
+}
+
+@media only screen and (max-width: 425px) {
+  #container {
+    width: 100%;
+    padding: 2px;
+  }
+  #input {
+    width: 70%;
+    font-size: 20px;
+  }
+  .fa-searchengi {
+    font-size: 20px;
+  }
+  #info {
+    width: 20%;
+  }
+  #Weather_icon img {
+    width: 90px !important;
+  }
+  #info_temp > h1 {
+    font-size: 24px;
+  }
+  #info_loc > h4 {
+    font-size: 18px;
+    color: blue;
+  }
+  #info-sec h5, #info-sec h2 {
+    font-size: 16px;
+  }
+  .set {
+    height: 30px;
+  }
 }
