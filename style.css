@@ -813,7 +813,7 @@ body {
     justify-items: center;
   }
   .header-section  img {
-    width: 450px;
+    width: 100%;
     height: 260px;
   }
   .header-section-intro {
@@ -824,23 +824,23 @@ body {
     font-size: 20px;
   }
   .header-section-intro > h1 > span{
-    font-size: 55px;
+    font-size: 45px;
   }
   .header-section-intro > h1{
-    font-size: 35px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
   .header-section-intro > h4{
     font-size: 25px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
   .header-section-intro > h4 > span{
     font-size: 40px;
   }
   .header-section-intro > p:last-child {
-    font-size: 22px;
+    font-size: 20px;
   }
   .First-section-heading > h1 {
     font-family: "Cervo";
