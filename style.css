@@ -804,7 +804,9 @@ body {
     justify-content: center !important;
     align-items: center !important;
   }
-  
+  .First-section{
+    padding: 10px;
+  }
   .header-section {
     width: 100%;
     display: flex;
@@ -842,6 +844,9 @@ body {
   .header-section-intro > p:last-child {
     font-size: 20px;
   }
+  .First-section-heading{
+    padding: 10px;
+  }
   .First-section-heading > h1 {
     font-family: "Cervo";
     font-size: 60px;
@@ -867,7 +872,7 @@ body {
   .JS-projects img,
   .HTML-projects img,
   .CSS-projects img {
-    width: 290px;
+    width: 100%;
     margin-top: 15px;
     margin-bottom: 15px;
   }
